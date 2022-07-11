@@ -12,7 +12,7 @@ Hashcap implements the conversion of a string into a hash, iteration of hashes, 
   <tr>
     <th>Name</th>
     <th>Python library</th>
-    <th>Wiki</th>
+    <th>Wikipedia</th>
     <th>Example</th>
   </tr>
 

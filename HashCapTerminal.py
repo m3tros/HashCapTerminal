@@ -375,7 +375,7 @@ Usage ls
     ls          /test -f        Display only files.
     ls          /test -d        Display only folders.'''
 
-__pwd__ = '''
+__pwd__ = f'''
 Command pwd
 ===========
 
@@ -388,7 +388,7 @@ Usage pwd
 
     Command     Example     
     -------     -------
-    pwd         {}[*]{} You are in directory: {}'''.format(Fore.BLUE, Fore.WHITE, os.getcwd())
+    pwd         {Fore.BLUE}[*]{Fore.WHITE} You are in directory: {os.getcwd()}'''
 
 __read__ = '''
 Command read
@@ -963,9 +963,9 @@ class Main:
                           __system__,
                           __hversion__]:
                     print(i)
-                Display.display_message('Learn more: https://github.com/John-MetrosSoftware/HashCap', start='\n')
+                Display.display_message('Learn more: https://github.com/John-MetrosSoftware/HashCapTerminal', start='\n')
             elif self.input_line_split[1].lower() == '-g' or self.input_line_split[1].lower() == '--github':
-                webbrowser.open_new('https://github.com/John-MetrosSoftware/HashCap')
+                webbrowser.open_new('https://github.com/John-MetrosSoftware/HashCapTerminal')
             elif self.input_line_split[1].lower() == 'brute':
                 print(f'Usage:\tbrute <hash_option> <hash_target> <dictionary>\n{__brute__}')
             elif self.input_line_split[1].lower() == 'cd':
@@ -1029,7 +1029,6 @@ class Main:
             Display.display_message('The history file has been cleared.')
         elif os.path.isfile(self.terminal_prompt_history) == True:
             Display.display_error('The history file has not been cleared.')
-
 
     def command_ls(self):
         try:

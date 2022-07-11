@@ -13,17 +13,65 @@ Hashcap implements the conversion of a string into a hash, iteration of hashes, 
 
 
 
-# Installation for python3
+# Libraries
 <table>
   <tr>
     <th>Library</th>
+    <th>Pip</th>
   </tr>
- <tr><td><a href="https://pypi.org/project/hashlib/">hashlib</a></td></tr>
- <tr><td><a href="https://pypi.org/project/pysha3">pysha3</a></td></tr>
- <tr><td><a href="https://pypi.org/project/Whirlpool/">whirlpool</a></td></tr>
- <tr><td><a href="https://pypi.org/project/colorama/">colorama</a></td></tr>
- <tr><td><a href="https://pypi.org/project/prompt-toolkit/">prompt_toolkit</a></td></tr>
+ <tr><td><a href="https://pypi.org/project/hashlib/">hashlib</a></td><td>pip install hashlib</td></tr>
+ <tr><td><a href="https://pypi.org/project/pysha3">pysha3</a></td><td>pip install pysha3</td></tr>
+ <tr><td><a href="https://pypi.org/project/Whirlpool/">whirlpool</a></td><td>pip install whirlpool</td></tr>
+ <tr><td><a href="https://pypi.org/project/colorama/">colorama</a></td><td>pip install colorama</td></tr>
+ <tr><td><a href="https://pypi.org/project/prompt-toolkit/">prompt_toolkit</a></td><td>pip install prompt_toolkit</td></tr>
 </table>
+
+## Pysha3 platform requirements
+Installing this `pysha3` library may cause errors.<br>
+Familiarize yourself with the requirements of the library for its work,<br>
+it provides the work of such hash functions as: `keccak224`, `keccak256`, `keccak384`, `keccak512`.<br>
+Check out the library documentation.<br><br>
+Pysha3 requirements:
+> Linux (GCC, clang) on X86, X86_64 and ARMv6 (little endian)<br>
+> Windows (VS 2008, VS 2010, VS2015) on X86 and X86_64 <br>
+
+# Installation for python3
+```bash
+git clone https://github.com/John-MetrosSoftware/HashCapTerminal
+cd HashCapTerminal
+pip3 install -r requirements.txt
+python3 HashCapTerminal.py
+```
+
+# Usage
+To display help for a specific command, you must add the name of the command after the `help` command.<br>
+To display the full program help, use the `-a` or `--all` option, it will display the help of all commands.<br>
+
+> Click on the command you need in the table, the link will take you to its help.
+<table>
+  <tr>
+    <th>Command</th>
+    <th>Description</th>
+  </tr>
+ <tr><td>brute</td><td>Brute-force hash function by dictionary.</td></tr>
+ <tr><td>cd</td><td>Changing the current working directory.</td></tr>
+ <tr><td>clear, clean, cls</td><td>Clearing the terminal.</td></tr>
+ <tr><td>dir</td><td>Displaying directory contents.</td></tr>
+ <tr><td>echo</td><td>Display a line of text.</td></tr>
+ <tr><td>exit, quit</td><td>Exiting the program.</td></tr>
+ <tr><td>file</td><td>Command for working with files.</td></tr>
+ <tr><td>folder</td><td>Command for working with folders.</td></tr>
+ <tr><td>hash</td><td>Command for working with a hash function.</td></tr>
+ <tr><td>help</td><td>Displaying program help.</td></tr>
+ <tr><td>history</td><td>Command for working with input history.</td></tr>
+ <tr><td>ls</td><td>Displaying directory contents.</td></tr>
+ <tr><td>pwd</td><td>Display current working directory.</td></tr>
+ <tr><td>read</td><td>Reading files.</td></tr>
+ <tr><td>sum</td><td>Display the hash sum of a file.</td></tr>
+ <tr><td>system</td><td>Execute an external command in a shell.</td></tr>
+ <tr><td>version</td><td>Display the current version of the program.</td></tr>
+</table>
+
 
 # List of hash functions
 

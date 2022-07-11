@@ -38,7 +38,7 @@ Hashcap implements the conversion of a string into a hash, iteration of hashes, 
  <tr><td><a href="https://docs.python.org/3/library/hashlib.html">sha3-512</a></td><td><a href="https://pypi.org/project/hashlib/">hashlib</a></td><td><a href="https://en.wikipedia.org/wiki/SHA-3">SHA3</a></td><td>9ece086e9bac491fac5c1d1046ca11d737b92a2b2ebd93f005d7b710110c0a678288166e7fbe796883a4f2e9b3ca9f484f521d0ce464345cc1aec96779149c14</td></tr>
  <tr><td><a href="https://docs.python.org/3/library/hashlib.html">shake128</a></td><td><a href="https://pypi.org/project/hashlib/">hashlib</a></td><td><a href="https://en.wikipedia.org/wiki/SHA-3">SHA3</a></td><td>d3b0aa9cd8b7255622cebc631e867d4093d6f6010191a53973c45fec9b07c774</td></tr>
  <tr><td><a href="https://docs.python.org/3/library/hashlib.html">shake256</a></td><td><a href="https://pypi.org/project/hashlib/">hashlib</a></td><td><a href="https://en.wikipedia.org/wiki/SHA-3">SHA3</a></td><td>b54ff7255705a71ee2925e4a3e30e41aed489a579d5595e0df13e32e1e4dd202</td></tr>
- <tr><td>whirlpool</td><td><a href="https://pypi.org/project/Whirlpool/">hashlib</a></td><td><a href="https://en.wikipedia.org/wiki/Whirlpool_(hash_function)">SHA3</a></td><td>b913d5bbb8e461c2c5961cbe0edcdadfd29f068225ceb37da6defcf89849368f8c6c2eb6a4c4ac75775d032a0ecfdfe8550573062b653fe92fc7b8fb3b7be8d6</td></tr>
+ <tr><td>whirlpool</td><td><a href="https://pypi.org/project/Whirlpool/">hashlib</a></td><td><a href="https://en.wikipedia.org/wiki/Whirlpool_(hash_function)">WHIRLPOOL</a></td><td>b913d5bbb8e461c2c5961cbe0edcdadfd29f068225ceb37da6defcf89849368f8c6c2eb6a4c4ac75775d032a0ecfdfe8550573062b653fe92fc7b8fb3b7be8d6</td></tr>
  
 
 </table>

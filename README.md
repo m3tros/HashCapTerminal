@@ -44,6 +44,8 @@ python3 HashCapTerminal.py
 ```
 
 # Usage
+
+## All commands
 To display help for a specific command, you must add the name of the command after the `help` command.<br>
 To display the full program help, use the `-a` or `--all` option, it will display the help of all commands.<br>
 
@@ -72,6 +74,35 @@ To display the full program help, use the `-a` or `--all` option, it will displa
  <tr><td>version</td><td>Display the current version of the program.</td></tr>
 </table>
 
+### Terminal 
+```
+Usage: help [<command> or <option>]
+
+All commands
+============
+
+    Command             Description
+    -------             -----------
+    brute               Brute-force hash function by dictionary.
+    cd                  Changing the current working directory.
+    clear, clean, cls   Clearing the terminal.
+    dir                 Displaying directory contents.
+    echo                Display a line of text.
+    exit, quit          Exiting the program.
+    file                Command for working with files.
+    folder              Command for working with folders.
+    hash                Command for working with a hash function.
+    help                Displaying program help.
+    history             Command for working with input history.
+    ls                  Displaying directory contents.
+    pwd                 Display current working directory.
+    read                Reading files.
+    sum                 Display the hash sum of a file.
+    system              Execute an external command in a shell.
+    version             Display the current version of the program.
+
+[*] Use the `help` command to display help for a specific command.
+```
 
 # List of hash functions
 

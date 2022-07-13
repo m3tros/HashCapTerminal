@@ -95,8 +95,8 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <th>Command</th>
     <th>Description</th>
   </tr>
- <tr><td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal/blob/main/README.md#brute">brute</a></td><td>Brute-force hash function by dictionary.</td></tr>
- <tr><td>cd</td><td>Changing the current working directory.</td></tr>
+ <tr><td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#brute">brute</a></td><td>Brute-force hash function by dictionary.</td></tr>
+ <tr><td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#cd">cd</a></td><td>Changing the current working directory.</td></tr>
  <tr><td>clear, clean, cls</td><td>Clearing the terminal.</td></tr>
  <tr><td>dir</td><td>Displaying directory contents.</td></tr>
  <tr><td>echo</td><td>Display a line of text.</td></tr>

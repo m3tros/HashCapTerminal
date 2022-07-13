@@ -774,7 +774,7 @@ class Main:
             Display.display_error('There are not enough parameters to execute the command `brute`.')
             return
         except KeyboardInterrupt:
-            Display.display_message('Completion of brute force...')
+            Display.display_message('Completion of brute force...', start='\n')
             return
         Display.display_message('Runtime: {}'.format(timedelta(seconds=time.monotonic() - time_start_brute_force)), start='\n')
 
@@ -798,7 +798,7 @@ class Main:
                 i = i.rstrip()
                 hash = Hash.action_check('hash', self.input_line_split[1].lower(), i)
                 if self.input_line_split[2] == hash:
-                    Display.display_message(f'{self.input_line_split[2]}: {i}')
+                    Display.display_message(f'{self.input_line_split[2]} == {hash}')
                     Display.display_message('Result {}: {}'.format(self.input_line_split[1].replace('--', '').lower(), i))
                     self.brute = True
                     break

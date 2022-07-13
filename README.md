@@ -117,8 +117,9 @@ To display the full program help, use the `-a` or `--all` option, it will displa
 
 ## brute
 ### Reference
-The `brute` command is responsible for brute force hash of the function by dictionary.
+ 
 <table>
+ <caption>Command brute</caption>
   <tr>
     <th>Command</th>
     <th>Description</th>
@@ -126,6 +127,7 @@ The `brute` command is responsible for brute force hash of the function by dicti
  <tr><td>brute</td><td>Brute-force hash function by dictionary.</td></tr>
 </table>
 <table>
+ <caption>Options brute</caption>
   <tr>
     <th>Options</th>
     <th>Description</th>
@@ -156,6 +158,7 @@ The `brute` command is responsible for brute force hash of the function by dicti
 </table>
 
 <table>
+ <caption>Usage brute</caption>
   <tr>
     <th>Command</th>
     <th>Brute options</th>
@@ -187,10 +190,36 @@ The `brute` command is responsible for brute force hash of the function by dicti
 
 
 
+## cd
+### Reference
+<table>
+  <caption>Command cd</caption>
+  <tr>
+    <th>Command</th>
+    <th>Description</th>
+  </tr>
+ <tr><td>cd</td><td>Changing the current working directory.</td></tr>
+</table>
+<table>
+  <caption>Usage cd</caption>
+  <tr>
+    <th>Command</th>
+    <th>Cd options</th>
+    <th>Description</th>
+  </tr>
+ <tr><td>cd</td><td></td><td>The command without parameters displays the current directory.</td></tr>
+ <tr><td>cd</td><td>..</td><td>Go back to previous directory.</td></tr>
+ <tr><td>cd</td><td>/test</td><td>Change to another directory.</td></tr>
+</table>
 
-
-
-
+### Mistakes
+<table>
+  <tr>
+    <th>Mistakes</th>
+    <th>Description</th>
+  </tr>
+<td>Could not find directory.</td><td>Failed to change directory. Check the existence of the directory and the syntax for writing the command.</td></tr>
+</table>
 
 
 

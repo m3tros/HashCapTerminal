@@ -19,8 +19,7 @@ from prompt_toolkit.cursor_shapes import CursorShape
 
 __version__ = 1.0
 
-__help__ = '''
-All commands
+__help__ = '''All commands
 ============
 
     Command             Description
@@ -51,8 +50,8 @@ Command brute
     -------     -----------                               
     brute       Brute-force hash function by dictionary.    
         
-Options brute 
-=============
+    Options brute 
+    =============
     
     Options         Description
     -------         -----------
@@ -80,8 +79,8 @@ Options brute
     --shake256      https://en.wikipedia.org/wiki/SHA-3
     --whirlpool     https://en.wikipedia.org/wiki/Whirlpool_(hash_function)
     
-Usage brute
-===========
+    Usage brute
+    ===========
 
     Command     Brute options   Hash target                         Dictionary
     -------     -------------   -----------                         ----------
@@ -95,15 +94,12 @@ Command cd
     -------     -----------                          
     cd          Changing the current working directory. 
                                                                                                   
-Usage cd
-========
-
-    Command     Description     
-    -------     -----------
-    cd          The command without parameters displays the current directory.
+    Usage cd
+    ========
     
     Command     Cd options      Description
     -------     ----------      -----------
+    cd                          The command without parameters displays the current directory.
     cd          ..              Go back to previous directory.
     cd          /test           Change to another directory.'''
 
@@ -115,23 +111,20 @@ Command clear
     -------     -----------                           
     clear       Clearing the terminal.
 
-Options clear
-=============
+    Options clear
+    =============
     
     Options                 Description
     -------                 -----------
     -e, --enable, --on      Enabled screen clearing after command input.
     -d, --disable, --off    Disabled screen clearing after command input.
 
-Usage clear
-===========
-
-    Command     Description     
-    -------     -----------
-    clear       Clearing the terminal.
+    Usage clear
+    ===========
     
     Command     Clear options       Description
     -------     -------------       -----------
+    clear                           Clearing the terminal.
     clear       -e                  Enabled screen clearing after command input.
     clear       -d                  Disabled screen clearing after command input.'''
 
@@ -143,15 +136,12 @@ Command dir
     -------     -----------                          
     dir         Displaying directory contents.
                                                                                                  
-Usage dir
-=========
+    Usage dir
+    =========
 
-    Command     Description     
-    -------     -----------
-    dir         Display files and folders in the current directory.
-    
     Command     Dir options     Description
     -------     -----------     -----------
+    dir                         Display files and folders in the current directory.
     dir         /test           Display files and folders of a specific directory.'''
 
 __echo__ = '''
@@ -162,23 +152,21 @@ Command echo
     -------     -----------                          
     echo        Display a line of text.
         
-Options echo
-============
+    Options echo
+    ============
     
     Options                 Description
     -------                 -----------
     -e, --enable, --on      Enabled command output mode on the screen.
     -d, --disable, --off    Disabled command output mode on the screen.
                                                                                            
-Usage echo
-==========
-
-    Command     Description     
-    -------     -----------
-    echo        If you do not pass parameters, then the output will be a new line.
+    Usage echo
+    ==========
         
     Command     Echo options    Description
     -------     ------------    -----------
+    echo                        If you do not pass parameters, 
+                                then the output will be a new line.
     echo        test            Text output. 
     echo        -e              Enabled command output mode on the screen.
     echo        -d              Disabled command output mode on the screen.'''
@@ -199,16 +187,16 @@ Command file
     -------     -----------                          
     file        Command for working with files.
         
-Options file
-============
+    Options file
+    ============
     
     Options             Description
     -------             -----------
     -c, --create        Create file.  
     -r, --remove        Delete a file.
                                                                                            
-Usage file
-==========
+    Usage file
+    ==========
 
     Command     File options    Description
     -------     ------------    -----------
@@ -223,16 +211,16 @@ Command folder
     -------     -----------                          
     folder      Command for working with folders.
         
-Options folder
-==============
+    Options folder
+    ==============
     
     Options         Description
     -------         -----------
     -c, --create    Create folder.  
     -r, --remove    Delete a folder.
                                                                                            
-Usage folder
-============
+    Usage folder
+    ============
 
     Command     Folder options      Description
     -------     --------------      -----------
@@ -247,8 +235,8 @@ Command hash
     -------     -----------                          
     hash        Command for working with a hash function.
         
-Options hash
-============
+    Options hash
+    ============
     
     Options         Description
     -------         -----------
@@ -279,8 +267,8 @@ Options hash
                     For the place of a specific function, everything at once.
     -s, --string    Regular string comparisons.       
                                                                 
-Usage hash
-==========
+    Usage hash
+    ==========
 
     Command     Hash options                                        Description
     -------     ------------                                        -----------
@@ -298,23 +286,20 @@ Command help
     -------     -----------                          
     help        Displaying program help.
         
-Options help
-============
+    Options help
+    ============
     
     Options             Description
     -------             -----------
     -a, --all           Complete help for the program.                                
     -g, --github        Open the program repository.
     
-Usage help
-==========
-
-    Command     Description     
-    -------     -----------
-    help        Brief display of the list of program commands.
+    Usage help
+    ==========
     
     Command     Help options        Description
     -------     ------------        -----------
+    help                            Brief display of the list of program commands.
     help        -a                  Full display of the list of program commands.
     help        -g                  Viewing the program repository.
     help        hash                Display help for a specific command.'''
@@ -327,23 +312,20 @@ Command history
     -------     -----------                          
     history     Command for working with input history.
         
-Options history
-===============
+    Options history
+    ===============
     
     Options                 Description
     -------                 -----------
     -c, --clear             Clearing the history file.
     -s, --clear-session     Clearing the history file and session.   
     
-Usage history
-=============
-
-    Command     Description     
-    -------     -----------
-    history     Display input history.
+    Usage history
+    =============
     
     Command     History options     Description
     -------     ---------------     -----------
+    history                         Display input history.
     history     -c                  The history file will be cleared. (.hashcap_terminal_history).
     history     -s                  The history file and session will be cleared.'''
 
@@ -355,23 +337,20 @@ Command ls
     -------     -----------                          
     ls          Displaying directory contents.
         
-Options ls
-==========
+    Options ls
+    ==========
     
     Options             Description
     -------             -----------
     -f, --file          Display only files.
     -d, --directory     Display only folders.
 
-Usage ls
-========
-
-    Command     Description     
-    -------     -----------
-    ls          Display files and folders in the current directory.
+    Usage ls
+    ========
     
     Command     Ls options      Description
     -------     ----------      -----------
+    ls                          Display files and folders in the current directory.
     ls          /test -f        Display only files.
     ls          /test -d        Display only folders.'''
 
@@ -383,8 +362,8 @@ Command pwd
     -------     -----------                           
     pwd         Display current working directory.   
 
-Usage pwd
-=========
+    Usage pwd
+    =========
 
     Command     Example     
     -------     -------
@@ -398,15 +377,15 @@ Command read
     -------     -----------                          
     read        Reading files.
         
-Options read
-============
+    Options read
+    ============
     
     Options         Description
     -------         -----------
     -e, --encoding  File opening encoding.
     
-Usage read
-==========
+    Usage read
+    ==========
 
     Command     Read options        Description
     -------     ------------        -----------
@@ -421,8 +400,8 @@ Command sum
     -------         -----------                          
     sum             Display the hash sum of a file.
         
-Options sum
-===========
+    Options sum
+    ===========
     
     Options         Description
     -------         -----------
@@ -452,8 +431,8 @@ Options sum
     -a, --all       Hashing a string with all functions. 
                     For the place of a specific function, everything at once.
 
-Usage sum
-=========
+    Usage sum
+    =========
 
     Command     Sum options                                         Description
     -------     -----------                                         -----------
@@ -469,8 +448,8 @@ Command system
     -------     -----------                          
     system      Execute an external command in a shell.
 
-Usage system
-============
+    Usage system
+    ============
 
     Command     System options      Description
     -------     --------------      -----------                          
@@ -792,13 +771,13 @@ class Main:
             except Exception as error_open_file:
                 Display.display_error(f'An error occurred while opening the dictionary file ({self.input_line_split[3]}): {error_open_file}')
             Display.display_message(f'Path dictionary\t : {self.input_line_split[3]}')
-            Display.display_message(f'Start time\t\t : {datetime.now()}\n')
+            Display.display_message('Start date and time\t : {}\n'.format(datetime.now().strftime('%d.%m.%Y %H:%M:%S')))
             for i in dictionary: 
                 line += 1
                 i = i.rstrip()
                 hash = Hash.action_check('hash', self.input_line_split[1].lower(), i)
                 if self.input_line_split[2] == hash:
-                    Display.display_message(f'{self.input_line_split[2]} == {i}')
+                    Display.display_message(f'{self.input_line_split[2]}:{i}')
                     Display.display_message('Result {}: {}'.format(self.input_line_split[1].replace('--', '').lower(), i))
                     self.brute = True
                     break
@@ -829,6 +808,8 @@ class Main:
             elif self.input_line_split[1].lower() == '--disable' or self.input_line_split[1].lower() == '--off' or self.input_line_split[1].lower() == '-d':
                 self.terminal_cleaning = False
                 Display.display_message('Disabled screen clearing after command input.')
+            else:
+                Display.display_error(f'Unknown parameter: {self.input_line_split[1]}')
         except IndexError:
             Display.display_clear()
     
@@ -967,39 +948,39 @@ class Main:
             elif self.input_line_split[1].lower() == '-g' or self.input_line_split[1].lower() == '--github':
                 webbrowser.open_new('https://github.com/John-MetrosSoftware/HashCapTerminal')
             elif self.input_line_split[1].lower() == 'brute':
-                print(f'Usage:\tbrute <hash_option> <hash_target> <dictionary>\n{__brute__}')
+                print(__brute__)
             elif self.input_line_split[1].lower() == 'cd':
-                print(f'Usage:\tcd <directory>\n{__cd__}')
+                print(__cd__)
             elif self.input_line_split[1].lower() == 'clear' or self.input_line_split[1].lower() == 'clean' or self.input_line_split[1].lower() == 'cls' :
-                print(f'Usage:\tclear <option>\n{__clear__}')
+                print(__clear__)
             elif self.input_line_split[1].lower() == 'dir':
-                print(f'Usage:\tdir <directory>\n{__dir__}')
+                print(__dir__)
             elif self.input_line_split[1].lower() == 'echo':
-                print(f'Usage:\techo [<string> or <option>]\n{__echo__}')
+                print(__echo__)
             elif self.input_line_split[1].lower() == 'exit' or self.input_line_split[1].lower() == 'quit':
-                print(f'Usage:\texit\n{__exit__}')
+                print(__exit__)
             elif self.input_line_split[1].lower() == 'file':
-                print(f'Usage:\tfile <option>\n{__hfile__}')
+                print(__hfile__)
             elif self.input_line_split[1].lower() == 'folder':
-                print(f'Usage:\tfolder <option>\n{__folder__}')
+                print(__folder__)
             elif self.input_line_split[1].lower() == 'hash':
-                print(f'Usage:\thash [[<hash_option> or <option>] <string>] == <hash_target>\n{__hash__}')
+                print(__hash__)
             elif self.input_line_split[1].lower() == 'help':
-                print(f'Usage:\thelp [<command> or <option>]\n{__hhelp__}')
+                print(__hhelp__)
             elif self.input_line_split[1].lower() == 'history':
-                print(f'Usage:\thistory <option>\n{__history__}')
+                print(__history__)
             elif self.input_line_split[1].lower() == 'ls':
-                print(f'Usage:\tls <option>\n{__ls__}')
+                print(__ls__)
             elif self.input_line_split[1].lower() == 'pwd':
-                print(f'Usage:\tpwd\n{__pwd__}')
+                print(__pwd__)
             elif self.input_line_split[1].lower() == 'read':
-                print(f'Usage:\tread [<filename> or <option>]\n{__read__}')
+                print(__read__)
             elif self.input_line_split[1].lower() == 'sum':
-                print(f'Usage:\tsum [<hash_option> <string>] == <hash_target>\n{__sum__}')
+                print(__sum__)
             elif self.input_line_split[1].lower() == 'system':
-                print(f'Usage:\tsystem <command>\n{__system__}')
+                print(__system__)
             elif self.input_line_split[1].lower() == 'version':
-                print(f'Usage:\tversion\n{__hversion__}')
+                print(__hversion__)
             else:
                 del self.input_line_split[0]
                 Display.display_error('Can\'t find help for command: {}'.format(' '.join(self.input_line_split)))

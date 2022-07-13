@@ -117,17 +117,17 @@ To display the full program help, use the `-a` or `--all` option, it will displa
 
 ## brute
 ### Reference
- 
+#### Command brute
 <table>
- <caption>Command brute</caption>
   <tr>
     <th>Command</th>
     <th>Description</th>
   </tr>
  <tr><td>brute</td><td>Brute-force hash function by dictionary.</td></tr>
 </table>
+
+#### Options brute
 <table>
- <caption>Options brute</caption>
   <tr>
     <th>Options</th>
     <th>Description</th>
@@ -157,8 +157,8 @@ To display the full program help, use the `-a` or `--all` option, it will displa
  <tr><td>--whirlpool</td><td>https://en.wikipedia.org/wiki/Whirlpool_(hash_function)</td></tr>
 </table>
 
+#### Usage brute
 <table>
- <caption>Usage brute</caption>
   <tr>
     <th>Command</th>
     <th>Brute options</th>
@@ -192,16 +192,17 @@ To display the full program help, use the `-a` or `--all` option, it will displa
 
 ## cd
 ### Reference
+#### Command cd
 <table>
-  <caption>Command cd</caption>
   <tr>
     <th>Command</th>
     <th>Description</th>
   </tr>
  <tr><td>cd</td><td>Changing the current working directory.</td></tr>
 </table>
+
+#### Usage cd
 <table>
-  <caption>Usage cd</caption>
   <tr>
     <th>Command</th>
     <th>Cd options</th>
@@ -224,16 +225,17 @@ To display the full program help, use the `-a` or `--all` option, it will displa
 
 ## clear
 ### Reference
+#### Command clear
 <table>
-  <caption>Command clear</caption>
   <tr>
     <th>Command</th>
     <th>Description</th>
   </tr>
  <tr><td>clear</td><td>Clearing the terminal.</td></tr>
 </table>
+
+#### Options clear
 <table>
- <caption>Options clear</caption>
   <tr>
     <th>Options</th>
     <th>Description</th>
@@ -241,8 +243,9 @@ To display the full program help, use the `-a` or `--all` option, it will displa
   <tr><td>-e, --enable, --on</td><td>Enabled screen clearing after command input.</td></tr>
   <tr><td>-d, --disable, --off</td><td>Disabled screen clearing after command input.</td></tr>
 </table>
+
+#### Usage clear
 <table>
-  <caption>Usage clear</caption>
   <tr>
     <th>Command</th>
     <th>Clear options</th>
@@ -252,6 +255,8 @@ To display the full program help, use the `-a` or `--all` option, it will displa
  <tr><td>clear</td><td>-e</td><td>Enabled screen clearing after command input.</td></tr>
  <tr><td>clear</td><td>-d</td><td>Disabled screen clearing after command input.</td></tr>
 </table>
+
+> clear or clean or cls are called by the same command. Syntactic sugar, nothing more.
 
 ### Mistakes
 <table>
@@ -271,15 +276,17 @@ To display the full program help, use the `-a` or `--all` option, it will displa
 ## dir
 ### Reference
 <table>
-  <caption>Command dir</caption>
+  <tr>
+    <th colspan="2">Command dir</th>
+  </tr>
   <tr>
     <th>Command</th>
-    <th>Description</th>
+    <th colspan="3">Description</th>
   </tr>
  <tr><td>dir</td><td>Displaying directory contents.</td></tr>
-</table>
-<table>
-  <caption>Usage dir</caption>
+  <tr>
+    <th colspan="3">Usage dir</th>
+  </tr>
   <tr>
     <th>Command</th>
     <th>Dir options</th>
@@ -289,4 +296,6 @@ To display the full program help, use the `-a` or `--all` option, it will displa
  <tr><td>dir</td><td>/test</td><td>Display files and folders of a specific directory.</td></tr>
 </table>
 
+ 
+ 
 

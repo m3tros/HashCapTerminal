@@ -222,10 +222,47 @@ To display the full program help, use the `-a` or `--all` option, it will displa
 </table>
 
 
+## clear, clean, cls
+### Reference
+<table>
+  <caption>Command clear</caption>
+  <tr>
+    <th>Command</th>
+    <th>Description</th>
+  </tr>
+ <tr><td>clear</td><td>Clearing the terminal.</td></tr>
+</table>
+<table>
+ <caption>Options clear</caption>
+  <tr>
+    <th>Options</th>
+    <th>Description</th>
+  </tr>
+  <tr><td>-e, --enable, --on</td><td>Enabled screen clearing after command input.</td></tr>
+  <tr><td>-d, --disable, --off</td><td>Disabled screen clearing after command input.</td></tr>
+</table>
+<table>
+  <caption>Usage clear</caption>
+  <tr>
+    <th>Command</th>
+    <th>Clear options</th>
+    <th>Description</th>
+  </tr>
+ <tr><td>clear</td><td></td><td>The command without parameters displays the current directory.</td></tr>
+ <tr><td>clear</td><td>-e</td><td>Enabled screen clearing after command input.</td></tr>
+ <tr><td>clear</td><td>-d</td><td>Disabled screen clearing after command input.</td></tr>
+</table>
 
+ 
 
-
-
+### Mistakes
+<table>
+  <tr>
+    <th>Mistakes</th>
+    <th>Description</th>
+  </tr>
+<td>Unknown parameter.</td><td>Apparently you specified an incorrect parameter to execute the command, view the list of available parameters. Pay attention to the command syntax.</td></tr>
+</table>
 
 
 

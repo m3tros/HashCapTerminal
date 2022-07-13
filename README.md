@@ -1,4 +1,4 @@
-<p align="center"><img src="https://user-images.githubusercontent.com/107058068/178225754-263efd37-04b1-4eb1-b21d-6e7793d62be2.png" alt="MetrosCrypt" width="100px" height="100px"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/107058068/178225754-263efd37-04b1-4eb1-b21d-6e7793d62be2.png" alt="HashCapTerminal" width="100px" height="100px"></p>
 <h1 align="center">HashCap Terminal</h1>
 
 # Description
@@ -6,8 +6,9 @@ HashCap version [Command Line Interpreter | Terminal] program for working with h
 This program is implemented in <a href="https://www.python.org/">Python</a> version <a href="https://www.python.org/downloads/release/python-3104/">3.10.4</a>. The library for getting data from the user is <a href="https://pypi.org/project/prompt-toolkit/">prompt_toolkit</a>.<br>
 Hashcap implements the conversion of a string into a hash, iteration of hashes, as well as getting the checksum of files.<br>
 
+<p align="center"><img src="https://user-images.githubusercontent.com/107058068/178722840-caff3c94-832a-4de6-b59b-ba9752dceefc.png" alt="HashCapTerminal"></p>
 
-
+ 
 
 
 
@@ -113,37 +114,9 @@ To display the full program help, use the `-a` or `--all` option, it will displa
  <tr><td>version</td><td>Display the current version of the program.</td></tr>
 </table>
 
-### Terminal 
-```
-Usage: help [<command> or <option>]
-
-All commands
-============
-
-    Command             Description
-    -------             -----------
-    brute               Brute-force hash function by dictionary.
-    cd                  Changing the current working directory.
-    clear, clean, cls   Clearing the terminal.
-    dir                 Displaying directory contents.
-    echo                Display a line of text.
-    exit, quit          Exiting the program.
-    file                Command for working with files.
-    folder              Command for working with folders.
-    hash                Command for working with a hash function.
-    help                Displaying program help.
-    history             Command for working with input history.
-    ls                  Displaying directory contents.
-    pwd                 Display current working directory.
-    read                Reading files.
-    sum                 Display the hash sum of a file.
-    system              Execute an external command in a shell.
-    version             Display the current version of the program.
-
-[*] Use the `help` command to display help for a specific command.
-```
 
 ## brute
+### Reference
 The `brute` command is responsible for brute force hash of the function by dictionary.
 <table>
   <tr>
@@ -192,48 +165,45 @@ The `brute` command is responsible for brute force hash of the function by dicti
  <tr><td>brute</td><td>--md5</td><td>098f6bcd4621d373cade4e832627b4f6</td><td>dictionary.txt</td></tr>
 </table>
 
-### Terminal 
-```
-Usage:  brute <hash_option> <hash_target> <dictionary>
+### Example
+<p align="center"><img src="https://user-images.githubusercontent.com/107058068/178722965-f0ef1973-4aca-418f-8944-09a1042c6a64.png" alt="HashCapTerminal"></p>
 
-Command brute
-=============
-    Command     Description                                
-    -------     -----------                               
-    brute       Brute-force hash function by dictionary.    
-        
-Options brute 
-=============
-    
-    Options         Description
-    -------         -----------
-    --adler32       https://en.wikipedia.org/wiki/Adler-32
-    --blake2b       https://en.wikipedia.org/wiki/BLAKE_(hash_function)
-    --blake2s       https://en.wikipedia.org/wiki/BLAKE_(hash_function)
-    --crc32         https://en.wikipedia.org/wiki/Cyclic_redundancy_check
-    --keccak224     https://en.wikipedia.org/wiki/SHA-3 
-    --keccak256     https://en.wikipedia.org/wiki/SHA-3
-    --keccak384     https://en.wikipedia.org/wiki/SHA-3
-    --keccak512     https://en.wikipedia.org/wiki/SHA-3
-    --md4           https://en.wikipedia.org/wiki/MD4
-    --md5           https://en.wikipedia.org/wiki/MD5
-    --ripemd160     https://en.wikipedia.org/wiki/RIPEMD
-    --sha1          https://en.wikipedia.org/wiki/SHA-1
-    --sha224        https://en.wikipedia.org/wiki/SHA-1
-    --sha256        https://en.wikipedia.org/wiki/SHA-1
-    --sha384        https://en.wikipedia.org/wiki/SHA-1
-    --sha512        https://en.wikipedia.org/wiki/SHA-1
-    --sha3-224      https://en.wikipedia.org/wiki/SHA-3
-    --sha3-256      https://en.wikipedia.org/wiki/SHA-3
-    --sha3-384      https://en.wikipedia.org/wiki/SHA-3
-    --sha3-512      https://en.wikipedia.org/wiki/SHA-3
-    --shake128      https://en.wikipedia.org/wiki/SHA-3
-    --shake256      https://en.wikipedia.org/wiki/SHA-3
-    --whirlpool     https://en.wikipedia.org/wiki/Whirlpool_(hash_function)
-    
-Usage brute
-===========
-    Command     Brute options   Hash target                         Dictionary
-    -------     -------------   -----------                         ----------
-    brute       --md5           098f6bcd4621d373cade4e832627b4f6    dictionary.txt
-```
+### Mistakes
+<table>
+  <tr>
+    <th>Mistakes</th>
+    <th>Description</th>
+  </tr>
+<td>There are not enough parameters to execute the command `brute`.</td><td>There are not enough parameters for the command to work. Check the spelling syntax.</td></tr>
+<td>There must be an exact parameter here. The `--all` option is not applicable here.</td><td>You cannot use the `--all` option, or `-a` for short. This parameter is responsible for the use of all hash functions in the bruforce command, you need a specific hash function. </td></tr>
+<td>An error occurred while opening the dictionary file.</td><td>Apparently there was an error opening the dictionary file. The file is opened with `latin-1` encoding in `r` mode.</td></tr>
+<td>Nothing was found.</td><td>No results. Try with a different dictionary.</td></tr>
+<td>Could not find dictionary file.</td><td>Check the existence of the dictionary and the syntax for writing the command.</td></tr>
+</table>
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

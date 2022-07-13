@@ -180,5 +180,59 @@ The `brute` command is responsible for brute force hash of the function by dicti
  <tr><td>--shake128</td><td>https://en.wikipedia.org/wiki/SHA-3</td></tr>
  <tr><td>--shake256</td><td>https://en.wikipedia.org/wiki/SHA-3</td></tr>
  <tr><td>--whirlpool</td><td>https://en.wikipedia.org/wiki/Whirlpool_(hash_function)</td></tr>
-  
 </table>
+
+<table>
+  <tr>
+    <th>Command</th>
+    <th>Brute options</th>
+    <th>Hash target</th>
+    <th>Dictionary</th>
+  </tr>
+ <tr><td>brute</td><td>--md5</td><td>098f6bcd4621d373cade4e832627b4f6</td><td>dictionary.txt</td></tr>
+</table>
+### Terminal 
+```
+Usage:  brute <hash_option> <hash_target> <dictionary>
+
+Command brute
+=============
+    Command     Description                                
+    -------     -----------                               
+    brute       Brute-force hash function by dictionary.    
+        
+Options brute 
+=============
+    
+    Options         Description
+    -------         -----------
+    --adler32       https://en.wikipedia.org/wiki/Adler-32
+    --blake2b       https://en.wikipedia.org/wiki/BLAKE_(hash_function)
+    --blake2s       https://en.wikipedia.org/wiki/BLAKE_(hash_function)
+    --crc32         https://en.wikipedia.org/wiki/Cyclic_redundancy_check
+    --keccak224     https://en.wikipedia.org/wiki/SHA-3 
+    --keccak256     https://en.wikipedia.org/wiki/SHA-3
+    --keccak384     https://en.wikipedia.org/wiki/SHA-3
+    --keccak512     https://en.wikipedia.org/wiki/SHA-3
+    --md4           https://en.wikipedia.org/wiki/MD4
+    --md5           https://en.wikipedia.org/wiki/MD5
+    --ripemd160     https://en.wikipedia.org/wiki/RIPEMD
+    --sha1          https://en.wikipedia.org/wiki/SHA-1
+    --sha224        https://en.wikipedia.org/wiki/SHA-1
+    --sha256        https://en.wikipedia.org/wiki/SHA-1
+    --sha384        https://en.wikipedia.org/wiki/SHA-1
+    --sha512        https://en.wikipedia.org/wiki/SHA-1
+    --sha3-224      https://en.wikipedia.org/wiki/SHA-3
+    --sha3-256      https://en.wikipedia.org/wiki/SHA-3
+    --sha3-384      https://en.wikipedia.org/wiki/SHA-3
+    --sha3-512      https://en.wikipedia.org/wiki/SHA-3
+    --shake128      https://en.wikipedia.org/wiki/SHA-3
+    --shake256      https://en.wikipedia.org/wiki/SHA-3
+    --whirlpool     https://en.wikipedia.org/wiki/Whirlpool_(hash_function)
+    
+Usage brute
+===========
+    Command     Brute options   Hash target                         Dictionary
+    -------     -------------   -----------                         ----------
+    brute       --md5           098f6bcd4621d373cade4e832627b4f6    dictionary.txt
+```

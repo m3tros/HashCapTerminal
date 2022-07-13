@@ -53,7 +53,7 @@ python3 HashCapTerminal.py
 ```
 
 # Terminal input
-The propmpt_toolkit bilbiotkea is responsible for entering commands and the prompt function, the session file is located specifically in the place of the program called `.hashcap_terminal_history`, it is also important to note that the backslash is replaced by a slash and the parameters are converted to lower case.
+The <a href="https://pypi.org/project/prompt-toolkit/">propmpt_toolkit</a> library is responsible for entering commands and the prompt function, the session file is located specifically in the place of the program called `.hashcap_terminal_history`, it is also important to note that the backslash is replaced by a slash and the parameters are converted to lower case.
 <br><br>
 To exit the program, you can press `Ctrl+C`. To stop Brute-force press all the same `Ctrl+C`.
 <table>

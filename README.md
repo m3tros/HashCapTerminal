@@ -253,8 +253,6 @@ To display the full program help, use the `-a` or `--all` option, it will displa
  <tr><td>clear</td><td>-d</td><td>Disabled screen clearing after command input.</td></tr>
 </table>
 
- 
-
 ### Mistakes
 <table>
   <tr>
@@ -270,6 +268,25 @@ To display the full program help, use the `-a` or `--all` option, it will displa
 
 
 
-
+## dir
+### Reference
+<table>
+  <caption>Command dir</caption>
+  <tr>
+    <th>Command</th>
+    <th>Description</th>
+  </tr>
+ <tr><td>dir</td><td>Displaying directory contents.</td></tr>
+</table>
+<table>
+  <caption>Usage dir</caption>
+  <tr>
+    <th>Command</th>
+    <th>Dir options</th>
+    <th>Description</th>
+  </tr>
+ <tr><td>dir</td><td></td><td>Display files and folders in the current directory.</td></tr>
+ <tr><td>dir</td><td>/test</td><td>Display files and folders of a specific directory.</td></tr>
+</table>
 
 

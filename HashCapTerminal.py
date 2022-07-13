@@ -798,7 +798,7 @@ class Main:
                 i = i.rstrip()
                 hash = Hash.action_check('hash', self.input_line_split[1].lower(), i)
                 if self.input_line_split[2] == hash:
-                    Display.display_message(f'{self.input_line_split[2]} == {hash}')
+                    Display.display_message(f'{self.input_line_split[2]} == {i}')
                     Display.display_message('Result {}: {}'.format(self.input_line_split[1].replace('--', '').lower(), i))
                     self.brute = True
                     break

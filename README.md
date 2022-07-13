@@ -191,6 +191,7 @@ The `brute` command is responsible for brute force hash of the function by dicti
   </tr>
  <tr><td>brute</td><td>--md5</td><td>098f6bcd4621d373cade4e832627b4f6</td><td>dictionary.txt</td></tr>
 </table>
+
 ### Terminal 
 ```
 Usage:  brute <hash_option> <hash_target> <dictionary>

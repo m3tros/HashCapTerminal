@@ -97,7 +97,7 @@ To display the full program help, use the `-a` or `--all` option, it will displa
   </tr>
  <tr><td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#brute">brute</a></td><td>Brute-force hash function by dictionary.</td></tr>
  <tr><td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#cd">cd</a></td><td>Changing the current working directory.</td></tr>
- <tr><td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#clear-clean-cls">clear, clean, cls</a></td><td>Clearing the terminal.</td></tr>
+ <tr><td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#clear">clear, clean, cls</a></td><td>Clearing the terminal.</td></tr>
  <tr><td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#dir">dir</a></td><td>Displaying directory contents.</td></tr>
  <tr><td>echo</td><td>Display a line of text.</td></tr>
  <tr><td>exit, quit</td><td>Exiting the program.</td></tr>
@@ -222,7 +222,7 @@ To display the full program help, use the `-a` or `--all` option, it will displa
 </table>
 
 
-## clear, clean, cls
+## clear
 ### Reference
 <table>
   <caption>Command clear</caption>

@@ -933,4 +933,8 @@ To display the full program help, use the `-a` or `--all` option, it will displa
    <td>There are not enough parameters to execute the command `hash`.</td>
    <td>Apparently you didn't specify any parameters. This command will not work without parameters</td>
    </tr>
+  <tr>
+  <td>Could not find hash.</td>
+  <td>Apparently you have specified a hash function that is not in the program, check the syntax for writing the command.</td>
+  </tr>
 </table>

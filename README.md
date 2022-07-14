@@ -1087,3 +1087,96 @@ To display the full program help, use the `-a` or `--all` option, it will displa
   </tr>
 </table>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## ls
+<table>
+  <tr>
+    <th colspan="2">Command ls</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th colspan="2">Description</th>
+  </tr>
+  <tr>
+    <td>ls</td>
+    <td>Displaying directory contents.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Options ls</th>
+  </tr>
+  <tr>
+    <th>Options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>-f, --file</td>
+    <td>Display only files.</td>
+  </tr>
+  <tr>
+    <td>-d, --directory</td>
+    <td>Display only folders.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">Usage ls</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th>Ls options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>ls</td>
+    <td></td>
+    <td>Display files and folders in the current directory.</td>
+  </tr>
+  <tr>
+    <td>ls</td>
+    <td>/test -f</td>
+    <td>Display only files.</td>
+  </tr>
+  <tr>
+    <td>ls</td>
+    <td>/test -d</td>
+    <td>Display only folders.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Mistakes</th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Unknown parameter.</td>
+    <td>Apparently you entered an unknown parameter, pay attention to the syntax for writing the command.</td>
+  </tr> 
+  </tr>
+</table>

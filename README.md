@@ -232,7 +232,7 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <td>Displaying directory contents.</td>
   </tr>
   <tr>
-    <td>echo</td>
+    <td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#echo">echo</a></td>
     <td>Display a line of text.</td>
   </tr>
   <tr>
@@ -284,7 +284,6 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <td>Display the current version of the program.</td>
   </tr>
 </table>
-
 
 ## brute
 <table>
@@ -418,7 +417,6 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <td>dictionary.txt</td>
   </tr>
 </table> 
-
 <table>
   <tr>
     <th colspan="2">Mistakes</th>
@@ -601,4 +599,93 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <td>Display files and folders of a specific directory.</td>
   </tr>
 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## echo
+<table>
+  <tr>
+    <th colspan="2">Command echo</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th colspan="2">Description</th>
+  </tr>
+  <tr>
+    <td>echo</td>
+    <td>Displaying directory contents.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Options echo</th>
+  </tr>
+  <tr>
+    <th>Options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>-e, --enable, --on</td>
+    <td>Enabled command output mode on the screen.</td>
+  </tr>
+  <tr>
+    <td>-d, --disable, --off</td>
+    <td>Disabled command output mode on the screen.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">Usage echo</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th>Echo options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>echo</td>
+    <td></td>
+    <td>If you do not pass parameters, then the output will be a new line.</td>
+  </tr>
+  <tr>
+    <td>echo</td>
+    <td>test</td>
+    <td>Text output.</td>
+  </tr>
+  <tr>
+    <td>echo</td>
+    <td>-e</td>
+    <td>Enabled command output mode on the screen.</td>
+  </tr>
+  <tr>
+    <td>echo</td>
+    <td>-d</td>
+    <td>Disabled command output mode on the screen.</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
 

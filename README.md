@@ -196,7 +196,6 @@ To exit the program, you can press `Ctrl+C`. To stop Brute-force press all the s
     <td><a href="https://en.wikipedia.org/wiki/Whirlpool_(hash_function)">WHIRLPOOL</a></td>
   </tr>
 </table>
-
 > The table of hash functions with which HashCap works is given.<br>
 > In the future, the list will expand.
 
@@ -204,9 +203,7 @@ To exit the program, you can press `Ctrl+C`. To stop Brute-force press all the s
 ## All commands
 To display help for a specific command, you must add the name of the command after the `help` command.<br>
 To display the full program help, use the `-a` or `--all` option, it will display the help of all commands.<br>
-
 > Click on the command you need in the table, the link will take you to its help.
-
 <table>
   <tr>
     <th colspan="2">All commands</th>
@@ -248,7 +245,7 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <td>Command for working with folders.</td>
   </tr>
   <tr>
-    <td>hash</td>
+    <td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#hash">hash</a></td>
     <td>Command for working with a hash function.</td>
   </tr>
   <tr>
@@ -416,7 +413,7 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <td>098f6bcd4621d373cade4e832627b4f6</td>
     <td>dictionary.txt</td>
   </tr>
-</table> 
+</table>
 <table>
   <tr>
     <th colspan="2">Mistakes</th>
@@ -562,231 +559,229 @@ To display the full program help, use the `-a` or `--all` option, it will displa
   <td>Apparently you specified an incorrect parameter to execute the command, view the list of available parameters. Pay attention to the command syntax.</td>
   </tr>
 </table>
-
 > clear or clean or cls are called by the same command. Syntactic sugar, nothing more.
 
 ## dir
 <table>
-   <tr>
-      <th colspan="2">Command dir</th>
-   </tr>
-   <tr>
-      <th>Command</th>
-      <th colspan="2">Description</th>
-   </tr>
-   <tr>
-      <td>dir</td>
-      <td>Displaying directory contents.</td>
-   </tr>
+  <tr>
+    <th colspan="2">Command dir</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th colspan="2">Description</th>
+  </tr>
+  <tr>
+    <td>dir</td>
+    <td>Displaying directory contents.</td>
+  </tr>
 </table>
 <table>
-   <tr>
-      <th colspan="3">Usage dir</th>
-   </tr>
-   <tr>
-      <th>Command</th>
-      <th>Dir options</th>
-      <th>Description</th>
-   </tr>
-   <tr>
-      <td>dir</td>
-      <td></td>
-      <td>Display files and folders in the current directory.</td>
-   </tr>
-   <tr>
-      <td>dir</td>
-      <td>/test</td>
-      <td>Display files and folders of a specific directory.</td>
-   </tr>
+  <tr>
+    <th colspan="3">Usage dir</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th>Dir options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>dir</td>
+    <td></td>
+    <td>Display files and folders in the current directory.</td>
+  </tr>
+  <tr>
+    <td>dir</td>
+    <td>/test</td>
+    <td>Display files and folders of a specific directory.</td>
+  </tr>
 </table>
 
 ## echo
 <table>
-   <tr>
-      <th colspan="2">Command echo</th>
-   </tr>
-   <tr>
-      <th>Command</th>
-      <th colspan="2">Description</th>
-   </tr>
-   <tr>
-      <td>echo</td>
-      <td>Displaying directory contents.</td>
-   </tr>
+  <tr>
+    <th colspan="2">Command echo</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th colspan="2">Description</th>
+  </tr>
+  <tr>
+    <td>echo</td>
+    <td>Displaying directory contents.</td>
+  </tr>
 </table>
 <table>
-   <tr>
-      <th colspan="2">Options echo</th>
-   </tr>
-   <tr>
-      <th>Options</th>
-      <th>Description</th>
-   </tr>
-   <tr>
-      <td>-e, --enable, --on</td>
-      <td>Enabled command output mode on the screen.</td>
-   </tr>
-   <tr>
-      <td>-d, --disable, --off</td>
-      <td>Disabled command output mode on the screen.</td>
-   </tr>
+  <tr>
+    <th colspan="2">Options echo</th>
+  </tr>
+  <tr>
+    <th>Options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>-e, --enable, --on</td>
+    <td>Enabled command output mode on the screen.</td>
+  </tr>
+  <tr>
+    <td>-d, --disable, --off</td>
+    <td>Disabled command output mode on the screen.</td>
+  </tr>
 </table>
 <table>
-   <tr>
-      <th colspan="3">Usage echo</th>
-   </tr>
-   <tr>
-      <th>Command</th>
-      <th>Echo options</th>
-      <th>Description</th>
-   </tr>
-   <tr>
-      <td>echo</td>
-      <td></td>
-      <td>If you do not pass parameters, then the output will be a new line.</td>
-   </tr>
-   <tr>
-      <td>echo</td>
-      <td>test</td>
-      <td>Text output.</td>
-   </tr>
-   <tr>
-      <td>echo</td>
-      <td>-e</td>
-      <td>Enabled command output mode on the screen.</td>
-   </tr>
-   <tr>
-      <td>echo</td>
-      <td>-d</td>
-      <td>Disabled command output mode on the screen.</td>
-   </tr>
+  <tr>
+    <th colspan="3">Usage echo</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th>Echo options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>echo</td>
+    <td></td>
+    <td>If you do not pass parameters, then the output will be a new line.</td>
+  </tr>
+  <tr>
+    <td>echo</td>
+    <td>test</td>
+    <td>Text output.</td>
+  </tr>
+  <tr>
+    <td>echo</td>
+    <td>-e</td>
+    <td>Enabled command output mode on the screen.</td>
+  </tr>
+  <tr>
+    <td>echo</td>
+    <td>-d</td>
+    <td>Disabled command output mode on the screen.</td>
+  </tr>
 </table>
 
 ## exit
 <table>
-   <tr>
-      <th colspan="2">Command exit</th>
-   </tr>
-   <tr>
-      <th>Command</th>
-      <th colspan="2">Description</th>
-   </tr>
-   <tr>
-      <td>exit</td>
-      <td>Exiting the program.</td>
-   </tr>
+  <tr>
+    <th colspan="2">Command exit</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th colspan="2">Description</th>
+  </tr>
+  <tr>
+    <td>exit</td>
+    <td>Exiting the program.</td>
+  </tr>
 </table>
 
 ## file | folder
 <table>
-   <tr>
-      <th colspan="2">Command file | folder</th>
-   </tr>
-   <tr>
-      <th>Command</th>
-      <th colspan="2">Description</th>
-   </tr>
-   <tr>
-      <td>file | folder</td>
-      <td>Command for working with files | folders.</td>
-   </tr>
+  <tr>
+    <th colspan="2">Command file | folder</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th colspan="2">Description</th>
+  </tr>
+  <tr>
+    <td>file | folder</td>
+    <td>Command for working with files | folders.</td>
+  </tr>
 </table>
 <table>
-   <tr>
-      <th colspan="2">Options file | folder</th>
-   </tr>
-   <tr>
-      <th>Options</th>
-      <th>Description</th>
-   </tr>
-   <tr>
-      <td>-c, --create</td>
-      <td>Create file | folder.</td>
-   </tr>
-   <tr>
-      <td>-r, --remove</td>
-      <td>Delete a file | folder.</td>
-   </tr>
+  <tr>
+    <th colspan="2">Options file | folder</th>
+  </tr>
+  <tr>
+    <th>Options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>-c, --create</td>
+    <td>Create file | folder.</td>
+  </tr>
+  <tr>
+    <td>-r, --remove</td>
+    <td>Delete a file | folder.</td>
+  </tr>
 </table>
 <table>
-   <tr>
-      <th colspan="3">Usage file | folder</th>
-   </tr>
-   <tr>
-      <th>Command</th>
-      <th>File | folder options</th>
-      <th>Description</th>
-   </tr>
-   <tr>
-      <td>file | folder</td>
-      <td>-c test.txt | -c test</td>
-      <td>The file `test.txt` | folder `test` will be created.</td>
-   </tr>
-   <tr>
-      <td>file | folder</td>
-      <td>-r tеst.txt | test</td>
-      <td>The file `test.txt` | folder `test` will be removed.</td>
-   </tr>
+  <tr>
+    <th colspan="3">Usage file | folder</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th>File | folder options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>file | folder</td>
+    <td>-c test.txt | -c test</td>
+    <td>The file `test.txt` | folder `test` will be created.</td>
+  </tr>
+  <tr>
+    <td>file | folder</td>
+    <td>-r tеst.txt | test</td>
+    <td>The file `test.txt` | folder `test` will be removed.</td>
+  </tr>
 </table>
 <table>
-   <tr>
-      <th colspan="2">Mistakes</th>
-   </tr>
-   <tr>
-      <th>Name</th>
-      <th>Description</th>
-   </tr>
-   <tr>
-      <td>Unknown parameter.</td>
-      <td>Could not find the parameter to execute the command, please note the syntax of writing.</td>
-   </tr>
-   <tr>
-      <td>You did not enter a file | folder name.</td>
-      <td>Apparently you did not specify the file | folder name, pay attention to the syntax for writing the command.</td>
-   </tr>
-   <tr>
-      <td>Failed to create file | folder.</td>
-      <td>For some reason, the file | folder could not be created.</td>
-   </tr>
-   <tr>
-      <td>Failed to delete file | folder.</td>
-      <td>Apparently for some reason it was not possible to delete the file | folder.</td>
-   </tr>
-   <tr>
-      <td>There are not enough parameters to execute the command `file` | `folder`.</td>
-      <td>Apparently you didn't specify any parameters. This command will not work without parameters.</td>
-   </tr>
-   <tr>
-      <td>Could not find file | folder.</td>
-      <td>The file | folder could not be found to delete. Check its existence, most likely it has already been deleted or simply moved. Also check the command syntax.</td>
-   </tr>
+  <tr>
+    <th colspan="2">Mistakes</th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Unknown parameter.</td>
+    <td>Could not find the parameter to execute the command, please note the syntax of writing.</td>
+  </tr>
+  <tr>
+    <td>You did not enter a file | folder name.</td>
+    <td>Apparently you did not specify the file | folder name, pay attention to the syntax for writing the command.</td>
+  </tr>
+  <tr>
+    <td>Failed to create file | folder.</td>
+    <td>For some reason, the file | folder could not be created.</td>
+  </tr>
+  <tr>
+    <td>Failed to delete file | folder.</td>
+    <td>Apparently for some reason it was not possible to delete the file | folder.</td>
+  </tr>
+  <tr>
+    <td>There are not enough parameters to execute the command `file` | `folder`.</td>
+    <td>Apparently you didn't specify any parameters. This command will not work without parameters.</td>
+  </tr>
+  <tr>
+    <td>Could not find file | folder.</td>
+    <td>The file | folder could not be found to delete. Check its existence, most likely it has already been deleted or simply moved. Also check the command syntax.</td>
+  </tr>
 </table>
-
 > Commands such as file or folder are combined into one help because they work the same `almost` but the errors are the same `only handled by the program`. I just didn't want to write the same text twice.
- 
+
 ## hash
 <table>
-   <tr>
-      <th colspan="2">Command hash</th>
-   </tr>
-   <tr>
-      <th>Command</th>
-      <th colspan="2">Description</th>
-   </tr>
-   <tr>
-      <td>hash</td>
-      <td>Command for working with a hash function.</td>
-   </tr>
+  <tr>
+    <th colspan="2">Command hash</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th colspan="2">Description</th>
+  </tr>
+  <tr>
+    <td>hash</td>
+    <td>Command for working with a hash function.</td>
+  </tr>
 </table>
 <table>
-   <tr>
-      <th colspan="2">Options hash</th>
-   </tr>
-   <tr>
-      <th>Options</th>
-      <th>Description</th>
-   </tr>
-   <tr>
+  <tr>
+    <th colspan="2">Options hash</th>
+  </tr>
+  <tr>
+    <th>Options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
     <td>--adler32</td>
     <td>https://en.wikipedia.org/wiki/Adler-32</td>
   </tr>
@@ -879,62 +874,124 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <td>https://en.wikipedia.org/wiki/Whirlpool_(hash_function)</td>
   </tr>
   <tr>
-  <td>-a, --all</td>
-  <td>Hashing a string with all functions. For the place of a specific function, everything at once.</td>
+    <td>-a, --all</td>
+    <td>Hashing a string with all functions. For the place of a specific function, everything at once.</td>
   </tr>
   <tr>
-  <td>-s, --string</td>
-  <td>Regular string comparisons.</td>
+    <td>-s, --string</td>
+    <td>Regular string comparisons.</td>
   </tr>
 </table>
 <table>
-   <tr>
-      <th colspan="3">Usage hash</th>
-   </tr>
-   <tr>
-      <th>Command</th>
-      <th>Hash options</th>
-      <th>Description</th>
-   </tr>
-   <tr>
-      <td>hash</td>
-      <td>--md5 test</td>
-      <td>Hashing string `test` in md5.</td>
-   </tr>
-   <tr>
-      <td>hash</td>
-      <td>--md5 test == 098f6bcd4621d373cade4e832627b4f6</td>
-      <td>Comparison if after converting the string `test` the resulting hash will be equal to the parameter, then everything is correct.</td>
-   </tr>
-   <tr>
-      <td>hash</td>
-      <td>--md5 098f6bcd4621d373cade4e832627b4f6 == test</td>
-      <td>The same as above, just a different syntax.</td>
-   </tr>
-   <tr>
-      <td>hash</td>
-      <td>-s test == test</td>
-      <td>Regular string comparisons.</td>
-   </tr>
+  <tr>
+    <th colspan="3">Usage hash</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th>Hash options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>hash</td>
+    <td>--md5 test</td>
+    <td>Hashing string `test` in md5.</td>
+  </tr>
+  <tr>
+    <td>hash</td>
+    <td>--md5 test == 098f6bcd4621d373cade4e832627b4f6</td>
+    <td>Comparison if after converting the string `test` the resulting hash will be equal to the parameter, then everything is correct.</td>
+  </tr>
+  <tr>
+    <td>hash</td>
+    <td>--md5 098f6bcd4621d373cade4e832627b4f6 == test</td>
+    <td>The same as above, just a different syntax.</td>
+  </tr>
+  <tr>
+    <td>hash</td>
+    <td>-s test == test</td>
+    <td>Regular string comparisons.</td>
+  </tr>
 </table>
 <table>
-   <tr>
-      <th colspan="2">Mistakes</th>
-   </tr>
-   <tr>
-      <th>Name</th>
-      <th>Description</th>
-   </tr>
-   <tr>
-      <td>Does not equal.</td>
-      <td>This reads that when comparing the parameters are not equal to each other.</td>
-   </tr>
-   <tr>
-   <td>There are not enough parameters to execute the command `hash`.</td>
-   <td>Apparently you didn't specify any parameters. This command will not work without parameters</td>
-   </tr>
   <tr>
-  <td>Could not find hash.</td>
-  <td>Apparently you have specified a hash function that is not in the program, check the syntax for writing the command.</td>
+    <th colspan="2">Mistakes</th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Does not equal.</td>
+    <td>This reads that when comparing the parameters are not equal to each other.</td>
+  </tr>
+  <tr>
+    <td>There are not enough parameters to execute the command `hash`.</td>
+    <td>Apparently you didn't specify any parameters. This command will not work without parameters</td>
+  </tr>
+  <tr>
+    <td>Could not find hash.</td>
+    <td>Apparently you have specified a hash function that is not in the program, check the syntax for writing the command.</td>
+  </tr>
+</table>
+
+## Help
+<table>
+  <tr>
+    <th colspan="2">Command help</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th colspan="2">Description</th>
+  </tr>
+  <tr>
+    <td>help</td>
+    <td>Displaying program help.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Options echo</th>
+  </tr>
+  <tr>
+    <th>Options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>-a, --all</td>
+    <td>Complete help for the program.</td>
+  </tr>
+  <tr>
+    <td>-g, --github</td>
+    <td></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">Usage help</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th>Help options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>help</td>
+    <td></td>
+    <td>Brief display of the list of program commands.</td>
+  </tr>
+  <tr>
+    <td>help</td>
+    <td>test</td>
+    <td>Text output.</td>
+  </tr>
+  <tr>
+    <td>echo</td>
+    <td>-e</td>
+    <td>Enabled command output mode on the screen.</td>
+  </tr>
+  <tr>
+    <td>echo</td>
+    <td>-d</td>
+    <td>Disabled command output mode on the screen.</td>
   </tr>
 </table>

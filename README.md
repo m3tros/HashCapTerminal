@@ -763,5 +763,174 @@ To display the full program help, use the `-a` or `--all` option, it will displa
 </table>
 
 > Commands such as file or folder are combined into one help because they work the same `almost` but the errors are the same `only handled by the program`. I just didn't want to write the same text twice.
-
  
+## hash
+<table>
+   <tr>
+      <th colspan="2">Command hash</th>
+   </tr>
+   <tr>
+      <th>Command</th>
+      <th colspan="2">Description</th>
+   </tr>
+   <tr>
+      <td>hash</td>
+      <td>Command for working with a hash function.</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <th colspan="2">Options hash</th>
+   </tr>
+   <tr>
+      <th>Options</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+    <td>--adler32</td>
+    <td>https://en.wikipedia.org/wiki/Adler-32</td>
+  </tr>
+  <tr>
+    <td>--blake2b</td>
+    <td>https://en.wikipedia.org/wiki/BLAKE_(hash_function)</td>
+  </tr>
+  <tr>
+    <td>--blake2s</td>
+    <td>https://en.wikipedia.org/wiki/BLAKE_(hash_function)</td>
+  </tr>
+  <tr>
+    <td>--crc32</td>
+    <td>https://en.wikipedia.org/wiki/Cyclic_redundancy_check</td>
+  </tr>
+  <tr>
+    <td>--keccak224</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--keccak256</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--keccak384</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--keccak512</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--md4</td>
+    <td>https://en.wikipedia.org/wiki/MD4</td>
+  </tr>
+  <tr>
+    <td>--md5</td>
+    <td>https://en.wikipedia.org/wiki/MD5</td>
+  </tr>
+  <tr>
+    <td>--ripemd160</td>
+    <td>https://en.wikipedia.org/wiki/RIPEMD</td>
+  </tr>
+  <tr>
+    <td>--sha1</td>
+    <td>https://en.wikipedia.org/wiki/SHA-1</td>
+  </tr>
+  <tr>
+    <td>--sha224</td>
+    <td>https://en.wikipedia.org/wiki/SHA-1</td>
+  </tr>
+  <tr>
+    <td>--sha256</td>
+    <td>https://en.wikipedia.org/wiki/SHA-1</td>
+  </tr>
+  <tr>
+    <td>--sha384</td>
+    <td>https://en.wikipedia.org/wiki/SHA-1</td>
+  </tr>
+  <tr>
+    <td>--sha512</td>
+    <td>https://en.wikipedia.org/wiki/SHA-1</td>
+  </tr>
+  <tr>
+    <td>--sha3-224</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--sha3-256</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--sha3-384</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--sha3-512</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--shake128</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--shake256</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--whirlpool</td>
+    <td>https://en.wikipedia.org/wiki/Whirlpool_(hash_function)</td>
+  </tr>
+  <tr>
+  <td>-a, --all</td>
+  <td>Hashing a string with all functions. For the place of a specific function, everything at once.</td>
+  </tr>
+  <tr>
+  <td>-s, --string</td>
+  <td>Regular string comparisons.</td>
+  </tr>
+</table>
+<table>
+   <tr>
+      <th colspan="3">Usage hash</th>
+   </tr>
+   <tr>
+      <th>Command</th>
+      <th>Hash options</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>hash</td>
+      <td>--md5 test</td>
+      <td>Hashing string `test` in md5.</td>
+   </tr>
+   <tr>
+      <td>hash</td>
+      <td>--md5 test == 098f6bcd4621d373cade4e832627b4f6</td>
+      <td>Comparison if after converting the string `test` the resulting hash will be equal to the parameter, then everything is correct.</td>
+   </tr>
+   <tr>
+      <td>hash</td>
+      <td>--md5 098f6bcd4621d373cade4e832627b4f6 == test</td>
+      <td>The same as above, just a different syntax.</td>
+   </tr>
+   <tr>
+      <td>hash</td>
+      <td>-s test == test</td>
+      <td>Regular string comparisons.</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <th colspan="2">Mistakes</th>
+   </tr>
+   <tr>
+      <th>Name</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>Does not equal.</td>
+      <td>This reads that when comparing the parameters are not equal to each other.</td>
+   </tr>
+   <tr>
+   <td>There are not enough parameters to execute the command `hash`.</td>
+   <td>Apparently you didn't specify any parameters. This command will not work without parameters</td>
+   </tr>
+</table>

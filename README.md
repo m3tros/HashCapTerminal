@@ -1239,3 +1239,172 @@ To display the full program help, use the `-a` or `--all` option, it will displa
      <td>Failed to find the encoding, you specified the wrong encoding or the file cannot be opened with this encoding. (errors != ignore).</td>
     </tr>
 </table>
+
+## sum
+<table>
+  <tr>
+    <th colspan="2">Command sum</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th colspan="2">Description</th>
+  </tr>
+  <tr>
+    <td>sum</td>
+    <td>Display the hash sum of a file.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Options sum</th>
+  </tr>
+  <tr>
+    <th>Options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <tr>
+    <td>--adler32</td>
+    <td>https://en.wikipedia.org/wiki/Adler-32</td>
+  </tr>
+  <tr>
+    <td>--blake2b</td>
+    <td>https://en.wikipedia.org/wiki/BLAKE_(hash_function)</td>
+  </tr>
+  <tr>
+    <td>--blake2s</td>
+    <td>https://en.wikipedia.org/wiki/BLAKE_(hash_function)</td>
+  </tr>
+  <tr>
+    <td>--crc32</td>
+    <td>https://en.wikipedia.org/wiki/Cyclic_redundancy_check</td>
+  </tr>
+  <tr>
+    <td>--keccak224</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--keccak256</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--keccak384</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--keccak512</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--md4</td>
+    <td>https://en.wikipedia.org/wiki/MD4</td>
+  </tr>
+  <tr>
+    <td>--md5</td>
+    <td>https://en.wikipedia.org/wiki/MD5</td>
+  </tr>
+  <tr>
+    <td>--ripemd160</td>
+    <td>https://en.wikipedia.org/wiki/RIPEMD</td>
+  </tr>
+  <tr>
+    <td>--sha1</td>
+    <td>https://en.wikipedia.org/wiki/SHA-1</td>
+  </tr>
+  <tr>
+    <td>--sha224</td>
+    <td>https://en.wikipedia.org/wiki/SHA-1</td>
+  </tr>
+  <tr>
+    <td>--sha256</td>
+    <td>https://en.wikipedia.org/wiki/SHA-1</td>
+  </tr>
+  <tr>
+    <td>--sha384</td>
+    <td>https://en.wikipedia.org/wiki/SHA-1</td>
+  </tr>
+  <tr>
+    <td>--sha512</td>
+    <td>https://en.wikipedia.org/wiki/SHA-1</td>
+  </tr>
+  <tr>
+    <td>--sha3-224</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--sha3-256</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--sha3-384</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--sha3-512</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--shake128</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--shake256</td>
+    <td>https://en.wikipedia.org/wiki/SHA-3</td>
+  </tr>
+  <tr>
+    <td>--whirlpool</td>
+    <td>https://en.wikipedia.org/wiki/Whirlpool_(hash_function)</td>
+  </tr>
+  <tr>
+    <td>-a, --all</td>
+    <td>Hashing a string with all functions. For the place of a specific function, everything at once.</td>
+  </tr>
+</table>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">Usage sum</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th>Sum options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>sum</td>
+    <td>--md5 test.txt</td>
+    <td>Display the hash sum of the file.</td>
+  </tr>
+  <tr>
+    <td>sum</td>
+    <td>--md5 test.txt == d8e8fca2dc0f896fd7cb4cb0031ba249</td>
+    <td>Compare sum hashes.</td>
+  </tr>
+  <tr>
+    <td>sum</td>
+    <td>--md5 d8e8fca2dc0f896fd7cb4cb0031ba249 == test.txt</td>
+    <td>Compare sum hashes.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Mistakes</th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Does not equal.</td>
+    <td>This reads that when comparing the parameters are not equal to each other.</td>
+  </tr>
+  <tr>
+    <td>Could not find the file.</td>
+    <td>Could not find a file in order to display its sum, check the syntax for writing a command and the existence of a file.</td>
+  </tr>
+  <tr>
+    <td>There are not enough parameters to execute the command `sum`.</td>
+     <td>Apparently you didn't specify any parameters. This command will not work without parameters.</td>
+    </tr>
+</table>

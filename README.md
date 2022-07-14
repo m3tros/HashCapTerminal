@@ -5,7 +5,7 @@
 HashCap version [Command Line Interpreter | Terminal] program for working with hash functions.<br>
 This program is implemented in <a href="https://www.python.org/">Python</a> version <a href="https://www.python.org/downloads/release/python-3104/">3.10.4</a>. The library for getting data from the user is <a href="https://pypi.org/project/prompt-toolkit/">prompt_toolkit</a>.<br>
 Hashcap implements the conversion of a string into a hash, iteration of hashes, as well as getting the checksum of files.<br>
-<p align="center"><img src="https://user-images.githubusercontent.com/107058068/178722840-caff3c94-832a-4de6-b59b-ba9752dceefc.png" alt="HashCapTerminal"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/107058068/179056663-b1c47324-cdba-4af0-80b4-45e78698c777.png" alt="HashCapTerminal"></p>
 
 # Libraries
 <table>
@@ -87,7 +87,7 @@ To exit the program, you can press `Ctrl+C`. To stop Brute-force press all the s
     <th>Name</th>
     <th>Description</th>
   </tr>
-  <td>Unknown parameter.</td>
+  <td>Command not found.</td>
   <td>The command you entered could not be processed. This means that there is no such command, check the command syntax.</td>
   </tr>
   <tr>
@@ -1489,3 +1489,10 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <td>Display the current version of the program.</td>
   </tr>
 </table>
+
+## Compilation
+There are a lot of compilers for python, but I will use <a href="https://pypi.org/project/pyinstaller/">pyinstaller</a>.
+```
+pyinstaller -F HashCapTerminal.py
+```
+After compilation, one executable file will appear in the dist folder. In order to change the icon, add the parameter `--icon=ICON_NAME`.

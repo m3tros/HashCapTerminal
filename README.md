@@ -567,200 +567,282 @@ To display the full program help, use the `-a` or `--all` option, it will displa
 
 ## dir
 <table>
-  <tr>
-    <th colspan="2">Command dir</th>
-  </tr>
-  <tr>
-    <th>Command</th>
-    <th colspan="2">Description</th>
-  </tr>
-  <tr>
-    <td>dir</td>
-    <td>Displaying directory contents.</td>
-  </tr>
+   <tr>
+      <th colspan="2">Command dir</th>
+   </tr>
+   <tr>
+      <th>Command</th>
+      <th colspan="2">Description</th>
+   </tr>
+   <tr>
+      <td>dir</td>
+      <td>Displaying directory contents.</td>
+   </tr>
 </table>
 <table>
-  <tr>
-    <th colspan="3">Usage dir</th>
-  </tr>
-  <tr>
-    <th>Command</th>
-    <th>Dir options</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>dir</td>
-    <td></td>
-    <td>Display files and folders in the current directory.</td>
-  </tr>
-  <tr>
-    <td>dir</td>
-    <td>/test</td>
-    <td>Display files and folders of a specific directory.</td>
-  </tr>
+   <tr>
+      <th colspan="3">Usage dir</th>
+   </tr>
+   <tr>
+      <th>Command</th>
+      <th>Dir options</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>dir</td>
+      <td></td>
+      <td>Display files and folders in the current directory.</td>
+   </tr>
+   <tr>
+      <td>dir</td>
+      <td>/test</td>
+      <td>Display files and folders of a specific directory.</td>
+   </tr>
 </table>
 
 ## echo
 <table>
-  <tr>
-    <th colspan="2">Command echo</th>
-  </tr>
-  <tr>
-    <th>Command</th>
-    <th colspan="2">Description</th>
-  </tr>
-  <tr>
-    <td>echo</td>
-    <td>Displaying directory contents.</td>
-  </tr>
+   <tr>
+      <th colspan="2">Command echo</th>
+   </tr>
+   <tr>
+      <th>Command</th>
+      <th colspan="2">Description</th>
+   </tr>
+   <tr>
+      <td>echo</td>
+      <td>Displaying directory contents.</td>
+   </tr>
 </table>
 <table>
-  <tr>
-    <th colspan="2">Options echo</th>
-  </tr>
-  <tr>
-    <th>Options</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>-e, --enable, --on</td>
-    <td>Enabled command output mode on the screen.</td>
-  </tr>
-  <tr>
-    <td>-d, --disable, --off</td>
-    <td>Disabled command output mode on the screen.</td>
-  </tr>
+   <tr>
+      <th colspan="2">Options echo</th>
+   </tr>
+   <tr>
+      <th>Options</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>-e, --enable, --on</td>
+      <td>Enabled command output mode on the screen.</td>
+   </tr>
+   <tr>
+      <td>-d, --disable, --off</td>
+      <td>Disabled command output mode on the screen.</td>
+   </tr>
 </table>
 <table>
-  <tr>
-    <th colspan="3">Usage echo</th>
-  </tr>
-  <tr>
-    <th>Command</th>
-    <th>Echo options</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>echo</td>
-    <td></td>
-    <td>If you do not pass parameters, then the output will be a new line.</td>
-  </tr>
-  <tr>
-    <td>echo</td>
-    <td>test</td>
-    <td>Text output.</td>
-  </tr>
-  <tr>
-    <td>echo</td>
-    <td>-e</td>
-    <td>Enabled command output mode on the screen.</td>
-  </tr>
-  <tr>
-    <td>echo</td>
-    <td>-d</td>
-    <td>Disabled command output mode on the screen.</td>
-  </tr>
+   <tr>
+      <th colspan="3">Usage echo</th>
+   </tr>
+   <tr>
+      <th>Command</th>
+      <th>Echo options</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>echo</td>
+      <td></td>
+      <td>If you do not pass parameters, then the output will be a new line.</td>
+   </tr>
+   <tr>
+      <td>echo</td>
+      <td>test</td>
+      <td>Text output.</td>
+   </tr>
+   <tr>
+      <td>echo</td>
+      <td>-e</td>
+      <td>Enabled command output mode on the screen.</td>
+   </tr>
+   <tr>
+      <td>echo</td>
+      <td>-d</td>
+      <td>Disabled command output mode on the screen.</td>
+   </tr>
 </table>
 
 ## exit
 <table>
-  <tr>
-    <th colspan="2">Command exit</th>
-  </tr>
-  <tr>
-    <th>Command</th>
-    <th colspan="2">Description</th>
-  </tr>
-  <tr>
-    <td>exit</td>
-    <td>Exiting the program.</td>
-  </tr>
+   <tr>
+      <th colspan="2">Command exit</th>
+   </tr>
+   <tr>
+      <th>Command</th>
+      <th colspan="2">Description</th>
+   </tr>
+   <tr>
+      <td>exit</td>
+      <td>Exiting the program.</td>
+   </tr>
 </table>
 
 ## file
 <table>
-  <tr>
-    <th colspan="2">Command file</th>
-  </tr>
-  <tr>
-    <th>Command</th>
-    <th colspan="2">Description</th>
-  </tr>
-  <tr>
-    <td>file</td>
-    <td>Command for working with files.</td>
-  </tr>
+   <tr>
+      <th colspan="2">Command file</th>
+   </tr>
+   <tr>
+      <th>Command</th>
+      <th colspan="2">Description</th>
+   </tr>
+   <tr>
+      <td>file</td>
+      <td>Command for working with files.</td>
+   </tr>
 </table>
 <table>
-  <tr>
-    <th colspan="2">Options file</th>
-  </tr>
-  <tr>
-    <th>Options</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>-c, --create</td>
-    <td>Create file.</td>
-  </tr>
-  <tr>
-    <td>-r, --remove</td>
-    <td>Delete a file.</td>
-  </tr>
+   <tr>
+      <th colspan="2">Options file</th>
+   </tr>
+   <tr>
+      <th>Options</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>-c, --create</td>
+      <td>Create file.</td>
+   </tr>
+   <tr>
+      <td>-r, --remove</td>
+      <td>Delete a file.</td>
+   </tr>
 </table>
 <table>
-  <tr>
-    <th colspan="3">Usage file</th>
-  </tr>
-  <tr>
-    <th>Command</th>
-    <th>File options</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>file</td>
-    <td>-c test.txt</td>
-    <td>The file `test.txt` will be created.</td>
-  </tr>
-  <tr>
-    <td>file</td>
-    <td>-r tеst.txt</td>
-    <td>The file `test.txt` will be removed.</td>
-  </tr>
+   <tr>
+      <th colspan="3">Usage file</th>
+   </tr>
+   <tr>
+      <th>Command</th>
+      <th>File options</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>file</td>
+      <td>-c test.txt</td>
+      <td>The file `test.txt` will be created.</td>
+   </tr>
+   <tr>
+      <td>file</td>
+      <td>-r tеst.txt</td>
+      <td>The file `test.txt` will be removed.</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <th colspan="2">Mistakes</th>
+   </tr>
+   <tr>
+      <th>Name</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>Unknown parameter.</td>
+      <td>Could not find the parameter to execute the command, please note the syntax of writing.</td>
+   </tr>
+   <tr>
+      <td>You did not enter a file name.</td>
+      <td>Apparently you did not specify the file name, pay attention to the syntax for writing the command.</td>
+   </tr>
+   <tr>
+      <td>Failed to create file.</td>
+      <td>For some reason, the file could not be created.</td>
+   </tr>
+   <tr>
+      <td>Failed to delete file.</td>
+      <td>Apparently for some reason it was not possible to delete the file.</td>
+   </tr>
+   <tr>
+      <td>There are not enough parameters to execute the command `file`.</td>
+      <td>Apparently you didn't specify any parameters. This command will not work without parameters.</td>
+   </tr>
+   <tr>
+      <td>Could not find file.</td>
+      <td>The file could not be found to delete. Check its existence, most likely it has already been deleted or simply moved. Also check the command syntax.</td>
+   </tr>
 </table>
 
-
-
-
-
+## folder
 <table>
-  <tr>
-    <th colspan="2">Mistakes</th>
-  </tr>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-  </tr>
-  
-  <tr>
-  <td>Unknown parameter.</td>
-  <td>Could not find the parameter to execute the command, please note the syntax of writing.</td>
-  </tr>
-  
-  <tr>
-  <td>You did not enter a file name.</td>
-  <td>Apparently you did not specify the file name, pay attention to the syntax for writing the command.</td>
-  </tr>
-  <tr>
-  <td>Failed to create file.</td>
-  <td>For some reason, the file could not be created.</td>
-  </tr>
-  <tr>
-  <td>Failed to delete file.</td>
-  <td>Apparently for some reason it was not possible to delete the file.</td>
-  </tr>
-  <tr>
-  <td>There are not enough parameters to execute the command `file`.</td>
-  <td>Apparently you didn't specify any parameters. This command will not work without parameters.</td>
-  </tr>
+   <tr>
+      <th colspan="2">Command folder</th>
+   </tr>
+   <tr>
+      <th>Command</th>
+      <th colspan="2">Description</th>
+   </tr>
+   <tr>
+      <td>folder</td>
+      <td>Command for working with folders.</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <th colspan="2">Options folder</th>
+   </tr>
+   <tr>
+      <th>Options</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>-c, --create</td>
+      <td>Create folder.</td>
+   </tr>
+   <tr>
+      <td>-r, --remove</td>
+      <td>Delete a folder.</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <th colspan="3">Usage folder</th>
+   </tr>
+   <tr>
+      <th>Command</th>
+      <th>Folder options</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>folder</td>
+      <td>-c test</td>
+      <td>The folder `test` will be created.</td>
+   </tr>
+   <tr>
+      <td>folder</td>
+      <td>-r tеst</td>
+      <td>The folder `test` will be removed.</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <th colspan="2">Mistakes</th>
+   </tr>
+   <tr>
+      <th>Name</th>
+      <th>Description</th>
+   </tr>
+   <tr>
+      <td>Unknown parameter.</td>
+      <td>Could not find the parameter to execute the command, please note the syntax of writing.</td>
+   </tr>
+   <tr>
+      <td>You did not enter a folder name.</td>
+      <td>Apparently you did not specify the folder name, pay attention to the syntax for writing the command.</td>
+   </tr>
+   <tr>
+      <td>Failed to create folder.</td>
+      <td>For some reason, the folder could not be created.</td>
+   </tr>
+   <tr>
+      <td>Failed to delete folder.</td>
+      <td>Apparently for some reason it was not possible to delete the folder.</td>
+   </tr>
+   <tr>
+      <td>There are not enough parameters to execute the command `folder`.</td>
+      <td>Apparently you didn't specify any parameters. This command will not work without parameters.</td>
+   </tr>
+   <tr>
+      <td>Could not find folder.</td>
+      <td>The folder could not be found to delete. Check its existence, most likely it has already been deleted or simply moved. Also check the command syntax.</td>
+   </tr>
 </table>

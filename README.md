@@ -677,23 +677,23 @@ To display the full program help, use the `-a` or `--all` option, it will displa
    </tr>
 </table>
 
-## file
+## file | folder
 <table>
    <tr>
-      <th colspan="2">Command file</th>
+      <th colspan="2">Command file | folder</th>
    </tr>
    <tr>
       <th>Command</th>
       <th colspan="2">Description</th>
    </tr>
    <tr>
-      <td>file</td>
-      <td>Command for working with files.</td>
+      <td>file | folder</td>
+      <td>Command for working with files | folders.</td>
    </tr>
 </table>
 <table>
    <tr>
-      <th colspan="2">Options file</th>
+      <th colspan="2">Options file | folder</th>
    </tr>
    <tr>
       <th>Options</th>
@@ -701,31 +701,31 @@ To display the full program help, use the `-a` or `--all` option, it will displa
    </tr>
    <tr>
       <td>-c, --create</td>
-      <td>Create file.</td>
+      <td>Create file | folder.</td>
    </tr>
    <tr>
       <td>-r, --remove</td>
-      <td>Delete a file.</td>
+      <td>Delete a file | folder.</td>
    </tr>
 </table>
 <table>
    <tr>
-      <th colspan="3">Usage file</th>
+      <th colspan="3">Usage file | folder</th>
    </tr>
    <tr>
       <th>Command</th>
-      <th>File options</th>
+      <th>File | folder options</th>
       <th>Description</th>
    </tr>
    <tr>
-      <td>file</td>
-      <td>-c test.txt</td>
-      <td>The file `test.txt` will be created.</td>
+      <td>file | folder</td>
+      <td>-c test.txt | -c test</td>
+      <td>The file `test.txt` | folder `test` will be created.</td>
    </tr>
    <tr>
-      <td>file</td>
-      <td>-r tеst.txt</td>
-      <td>The file `test.txt` will be removed.</td>
+      <td>file | folder</td>
+      <td>-r tеst.txt | test</td>
+      <td>The file `test.txt` | folder `test` will be removed.</td>
    </tr>
 </table>
 <table>
@@ -741,108 +741,27 @@ To display the full program help, use the `-a` or `--all` option, it will displa
       <td>Could not find the parameter to execute the command, please note the syntax of writing.</td>
    </tr>
    <tr>
-      <td>You did not enter a file name.</td>
-      <td>Apparently you did not specify the file name, pay attention to the syntax for writing the command.</td>
+      <td>You did not enter a file | folder name.</td>
+      <td>Apparently you did not specify the file | folder name, pay attention to the syntax for writing the command.</td>
    </tr>
    <tr>
-      <td>Failed to create file.</td>
-      <td>For some reason, the file could not be created.</td>
+      <td>Failed to create file | folder.</td>
+      <td>For some reason, the file | folder could not be created.</td>
    </tr>
    <tr>
-      <td>Failed to delete file.</td>
-      <td>Apparently for some reason it was not possible to delete the file.</td>
+      <td>Failed to delete file | folder.</td>
+      <td>Apparently for some reason it was not possible to delete the file | folder.</td>
    </tr>
    <tr>
-      <td>There are not enough parameters to execute the command `file`.</td>
+      <td>There are not enough parameters to execute the command `file` | `folder`.</td>
       <td>Apparently you didn't specify any parameters. This command will not work without parameters.</td>
    </tr>
    <tr>
-      <td>Could not find file.</td>
-      <td>The file could not be found to delete. Check its existence, most likely it has already been deleted or simply moved. Also check the command syntax.</td>
+      <td>Could not find file | folder.</td>
+      <td>The file | folder could not be found to delete. Check its existence, most likely it has already been deleted or simply moved. Also check the command syntax.</td>
    </tr>
 </table>
 
-## folder
-<table>
-   <tr>
-      <th colspan="2">Command folder</th>
-   </tr>
-   <tr>
-      <th>Command</th>
-      <th colspan="2">Description</th>
-   </tr>
-   <tr>
-      <td>folder</td>
-      <td>Command for working with folders.</td>
-   </tr>
-</table>
-<table>
-   <tr>
-      <th colspan="2">Options folder</th>
-   </tr>
-   <tr>
-      <th>Options</th>
-      <th>Description</th>
-   </tr>
-   <tr>
-      <td>-c, --create</td>
-      <td>Create folder.</td>
-   </tr>
-   <tr>
-      <td>-r, --remove</td>
-      <td>Delete a folder.</td>
-   </tr>
-</table>
-<table>
-   <tr>
-      <th colspan="3">Usage folder</th>
-   </tr>
-   <tr>
-      <th>Command</th>
-      <th>Folder options</th>
-      <th>Description</th>
-   </tr>
-   <tr>
-      <td>folder</td>
-      <td>-c test</td>
-      <td>The folder `test` will be created.</td>
-   </tr>
-   <tr>
-      <td>folder</td>
-      <td>-r tеst</td>
-      <td>The folder `test` will be removed.</td>
-   </tr>
-</table>
-<table>
-   <tr>
-      <th colspan="2">Mistakes</th>
-   </tr>
-   <tr>
-      <th>Name</th>
-      <th>Description</th>
-   </tr>
-   <tr>
-      <td>Unknown parameter.</td>
-      <td>Could not find the parameter to execute the command, please note the syntax of writing.</td>
-   </tr>
-   <tr>
-      <td>You did not enter a folder name.</td>
-      <td>Apparently you did not specify the folder name, pay attention to the syntax for writing the command.</td>
-   </tr>
-   <tr>
-      <td>Failed to create folder.</td>
-      <td>For some reason, the folder could not be created.</td>
-   </tr>
-   <tr>
-      <td>Failed to delete folder.</td>
-      <td>Apparently for some reason it was not possible to delete the folder.</td>
-   </tr>
-   <tr>
-      <td>There are not enough parameters to execute the command `folder`.</td>
-      <td>Apparently you didn't specify any parameters. This command will not work without parameters.</td>
-   </tr>
-   <tr>
-      <td>Could not find folder.</td>
-      <td>The folder could not be found to delete. Check its existence, most likely it has already been deleted or simply moved. Also check the command syntax.</td>
-   </tr>
-</table>
+> Commands such as file or folder are combined into one help because they work the same `almost` but the errors are the same `only handled by the program`. I just didn't want to write the same text twice.
+
+ 

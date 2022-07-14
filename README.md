@@ -7,6 +7,8 @@ This program is implemented in <a href="https://www.python.org/">Python</a> vers
 Hashcap implements the conversion of a string into a hash, iteration of hashes, as well as getting the checksum of files.<br>
 <p align="center"><img src="https://user-images.githubusercontent.com/107058068/179056663-b1c47324-cdba-4af0-80b4-45e78698c777.png" alt="HashCapTerminal"></p>
 
+> Current version: 1.0
+
 # Libraries
 <table>
   <tr>
@@ -34,6 +36,8 @@ Hashcap implements the conversion of a string into a hash, iteration of hashes, 
     <td>pip install prompt_toolkit</td>
   </tr>
 </table>
+
+> In case of problems with the installation, read the official documentation here there are all links. You can remove the libraries that are responsible for hashing from the code in case of problems, the most important is hashlib.
 
 ## Pysha3 platform requirements
 Installing this `pysha3` library may cause errors.<br>
@@ -244,8 +248,6 @@ To exit the program, you can press `Ctrl+C`. To stop Brute-force press all the s
 To display help for a specific command, you must add the name of the command after the `help` command.<br>
 To display the full program help, use the `-a` or `--all` option, it will display the help of all commands.<br>
 
-> Click on the command you need in the table, the link will take you to its help.
-
 <table>
   <tr>
     <th colspan="2">All commands</th>
@@ -323,6 +325,8 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <td>Display the current version of the program.</td>
   </tr>
 </table>
+
+> Click on the command you need in the table, the link will take you to its help.
 
 ## brute
 <table>

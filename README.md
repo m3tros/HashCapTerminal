@@ -236,7 +236,7 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <td>Display a line of text.</td>
   </tr>
   <tr>
-    <td>exit, quit</td>
+    <td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#exit">exit, quit</a></td>
     <td>Exiting the program.</td>
   </tr>
   <tr>

@@ -932,7 +932,7 @@ To display the full program help, use the `-a` or `--all` option, it will displa
   </tr>
   <tr>
     <td>There are not enough parameters to execute the command `hash`.</td>
-    <td>Apparently you didn't specify any parameters. This command will not work without parameters</td>
+    <td>Apparently you didn't specify any parameters. This command will not work without parameters.</td>
   </tr>
   <tr>
     <td>Could not find hash.</td>
@@ -1083,32 +1083,8 @@ To display the full program help, use the `-a` or `--all` option, it will displa
   <tr>
     <td>Unknown parameter.</td>
     <td>Apparently you entered an unknown parameter, pay attention to the syntax for writing the command.</td>
-  </tr> 
   </tr>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## ls
 <table>
@@ -1175,8 +1151,91 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <th>Description</th>
   </tr>
   <tr>
-    <td>Unknown parameter.</td>
-    <td>Apparently you entered an unknown parameter, pay attention to the syntax for writing the command.</td>
-  </tr> 
+    <td>Could not find directory</td>
+    <td>Could not find directory to display content. Check the syntax for writing the command and for the existence of the directory.</td>
   </tr>
+</table>
+
+## pwd
+<table>
+  <tr>
+    <th colspan="3">Usage pwd</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>pwd</td>
+    <td>Display current working directory.</td>
+  </tr>
+</table>
+
+## read
+<table>
+  <tr>
+    <th colspan="2">Command read</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th colspan="2">Description</th>
+  </tr>
+  <tr>
+    <td>read</td>
+    <td>Reading files.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Options read</th>
+  </tr>
+  <tr>
+    <th>Options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>-e, --encoding</td>
+    <td>File opening encoding.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">Usage reaad</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th>Read options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>read</td>
+    <td>test.txt</td>
+    <td>The file `test.txt` will be read. (default: UTF-8).</td>
+  </tr>
+  <tr>
+    <td>read</td>
+    <td>test.txt -e=UTF-8</td>
+    <td>The `test.txt` file will be read with only the specified encoding.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Mistakes</th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>There are not enough parameters to execute the command `read`.</td>
+    <td>Apparently you didn't specify any parameters. This command will not work without parameters.</td>
+  </tr>
+  <tr>
+    <td>Could not find the file.</td>
+    <td>Could not find a file to display it. Check the syntax for writing and existing the file.</td>
+  </tr>
+  <tr>
+    <td>Unknown encoding.</td>
+     <td>Failed to find the encoding, you specified the wrong encoding or the file cannot be opened with this encoding. (errors != ignore).</td>
+    </tr>
 </table>

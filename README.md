@@ -53,6 +53,28 @@ pip3 install -r requirements.txt
 python3 HashCapTerminal.py
 ```
 
+# Terminal messages
+<table>
+  <tr>
+    <th colspan="2">Terminal messages</th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <td>[i] - info</td>
+  <td>Regular message. Information about something.</td>
+  </tr>
+  <tr>
+    <td>[w] - warning</td>
+    <td>A warning is usually used when deleting a file. Notification of dangerous actions.</td>
+  </tr>
+  <tr>
+    <td>[e] - error</td>
+    <td>An error has occurred, there should be a description of the error next to it.</td>
+  </tr>
+</table>
+
 # Terminal input
 The <a href="https://pypi.org/project/prompt-toolkit/">propmpt_toolkit</a> library is responsible for entering commands and the prompt function, the session file is located specifically in the place of the program called `.hashcap_terminal_history`, it is also important to note that the backslash is replaced by a slash and the parameters are converted to lower case.
 <br><br>
@@ -73,6 +95,22 @@ To exit the program, you can press `Ctrl+C`. To stop Brute-force press all the s
     <td>You do not have sufficient rights to execute the command, increase the rights to execute such commands. Use sudo if you are on linux or run the program as administrator if you are on windows.</td>
   </tr>
 </table>
+
+# Terminal mistakes
+<table>
+  <tr>
+    <th colspan="2">Mistakes</th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <td>Unknown error.</td>
+  <td>If you get this message, then there should be an error message nearby, look for an answer on the Internet or create a question in the repository and describe the problem in more detail.</td>
+  </tr>
+</table>
+
+> The program does not handle such errors.
 
 # List of hash functions
 <table>

@@ -41,6 +41,7 @@ Familiarize yourself with the requirements of the library for its work,<br>
 it provides the work of such hash functions as: `keccak224`, `keccak256`, `keccak384`, `keccak512`.<br>
 Check out the library documentation.<br><br>
 Pysha3 requirements:
+
 > Linux (GCC, clang) on X86, X86_64 and ARMv6 (little endian)<br>
 > Windows (VS 2008, VS 2010, VS2015) on X86 and X86_64 <br>
 
@@ -196,6 +197,7 @@ To exit the program, you can press `Ctrl+C`. To stop Brute-force press all the s
     <td><a href="https://en.wikipedia.org/wiki/Whirlpool_(hash_function)">WHIRLPOOL</a></td>
   </tr>
 </table>
+
 > The table of hash functions with which HashCap works is given.<br>
 > In the future, the list will expand.
 
@@ -203,7 +205,9 @@ To exit the program, you can press `Ctrl+C`. To stop Brute-force press all the s
 ## All commands
 To display help for a specific command, you must add the name of the command after the `help` command.<br>
 To display the full program help, use the `-a` or `--all` option, it will display the help of all commands.<br>
+
 > Click on the command you need in the table, the link will take you to its help.
+
 <table>
   <tr>
     <th colspan="2">All commands</th>
@@ -559,6 +563,7 @@ To display the full program help, use the `-a` or `--all` option, it will displa
   <td>Apparently you specified an incorrect parameter to execute the command, view the list of available parameters. Pay attention to the command syntax.</td>
   </tr>
 </table>
+
 > clear or clean or cls are called by the same command. Syntactic sugar, nothing more.
 
 ## dir
@@ -757,6 +762,7 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <td>The file | folder could not be found to delete. Check its existence, most likely it has already been deleted or simply moved. Also check the command syntax.</td>
   </tr>
 </table>
+
 > Commands such as file or folder are combined into one help because they work the same `almost` but the errors are the same `only handled by the program`. I just didn't want to write the same text twice.
 
 ## hash

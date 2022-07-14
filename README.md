@@ -240,11 +240,11 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <td>Exiting the program.</td>
   </tr>
   <tr>
-    <td>file</td>
+    <td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#file--folder">file</a></td>
     <td>Command for working with files.</td>
   </tr>
   <tr>
-    <td>folder</td>
+    <td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#file--folder">folder</a></td>
     <td>Command for working with folders.</td>
   </tr>
   <tr>

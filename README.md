@@ -253,35 +253,35 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <td>Command for working with a hash function.</td>
   </tr>
   <tr>
-    <td>help</td>
+    <td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#help">help</a></td>
     <td>Displaying program help.</td>
   </tr>
   <tr>
-    <td>history</td>
+    <td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#history">history</a></td>
     <td>Command for working with input history.</td>
   </tr>
   <tr>
-    <td>ls</td>
+    <td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#ls">ls</a></td>
     <td>Displaying directory contents.</td>
   </tr>
   <tr>
-    <td>pwd</td>
+    <td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#pwd">pwd</a></td>
     <td>Display current working directory.</td>
   </tr>
   <tr>
-    <td>read</td>
+    <td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#read">read</a></td>
     <td>Reading files.</td>
   </tr>
   <tr>
-    <td>sum</td>
+    <td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#sum">sum</a></td>
     <td>Display the hash sum of a file.</td>
   </tr>
   <tr>
-    <td>system</td>
+    <td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#system">system</a></td>
     <td>Execute an external command in a shell.</td>
   </tr>
   <tr>
-    <td>version</td>
+    <td><a href="https://github.com/John-MetrosSoftware/HashCapTerminal#version">version</a></td>
     <td>Display the current version of the program.</td>
   </tr>
 </table>

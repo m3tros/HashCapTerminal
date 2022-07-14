@@ -473,14 +473,14 @@ class Display:
     '''
 
     def display_message(text, start='', end='\n'):
-        print(f'{start}{Fore.BLUE}[*]{Fore.WHITE} {text}', end=end)
-    
-    def display_error(text, start='', end='\n'):
-        print(f'{start}{Fore.RED}[!]{Fore.WHITE} {text}', end=end)
+        print(f'{start}{Fore.BLUE}[i]{Fore.WHITE} {text}', end=end)
     
     def display_warning(text, start='', end='\n'):
-        print(f'{start}{Fore.YELLOW}[*]{Fore.WHITE} {text}', end=end)
-
+        print(f'{start}{Fore.YELLOW}[w]{Fore.WHITE} {text}', end=end)
+        
+    def display_error(text, start='', end='\n'):
+        print(f'{start}{Fore.RED}[e]{Fore.WHITE} {text}', end=end)
+    
     def display_version_program():
         Display.display_message(f'Metros HashCap Terminal (version {__version__}).')
 

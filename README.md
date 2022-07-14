@@ -987,17 +987,103 @@ To display the full program help, use the `-a` or `--all` option, it will displa
   </tr>
   <tr>
     <td>help</td>
-    <td>test</td>
-    <td>Text output.</td>
+    <td>-a</td>
+    <td>Full display of the list of program commands.</td>
   </tr>
   <tr>
-    <td>echo</td>
-    <td>-e</td>
-    <td>Enabled command output mode on the screen.</td>
+    <td>help</td>
+    <td>-g</td>
+    <td>Viewing the program repository.</td>
   </tr>
   <tr>
-    <td>echo</td>
-    <td>-d</td>
-    <td>Disabled command output mode on the screen.</td>
+    <td>help</td>
+    <td>hash</td>
+    <td>Display help for a specific command.</td>
   </tr>
 </table>
+<table>
+  <tr>
+    <th colspan="2">Mistakes</th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Can't find help for command</td>
+    <td>There is no help for the command you entered, pay attention to the syntax of writing.</td>
+  </tr> 
+  </tr>
+</table>
+
+## history
+<table>
+  <tr>
+    <th colspan="2">Command history</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th colspan="2">Description</th>
+  </tr>
+  <tr>
+    <td>history</td>
+    <td>Command for working with input history.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Options history</th>
+  </tr>
+  <tr>
+    <th>Options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>-c, --clear</td>
+    <td>Clearing the history file.</td>
+  </tr>
+  <tr>
+    <td>-s, --clear-session </td>
+    <td>Clearing the history file and session.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">Usage history</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th>History options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>history</td>
+    <td></td>
+    <td>Display input history.</td>
+  </tr>
+  <tr>
+    <td>history</td>
+    <td>-c</td>
+    <td>The history file will be cleared. (.hashcap_terminal_history).</td>
+  </tr>
+  <tr>
+    <td>history</td>
+    <td>-s</td>
+    <td>The history file and session will be cleared.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Mistakes</th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Unknown parameter.</td>
+    <td>Apparently you entered an unknown parameter, pay attention to the syntax for writing the command.</td>
+  </tr> 
+  </tr>
+</table>
+

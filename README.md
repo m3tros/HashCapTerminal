@@ -1012,7 +1012,7 @@ To display the full program help, use the `-a` or `--all` option, it will displa
   <tr>
     <td>Can't find help for command</td>
     <td>There is no help for the command you entered, pay attention to the syntax of writing.</td>
-  </tr> 
+  </tr>
   </tr>
 </table>
 
@@ -1200,7 +1200,7 @@ To display the full program help, use the `-a` or `--all` option, it will displa
 </table>
 <table>
   <tr>
-    <th colspan="3">Usage reaad</th>
+    <th colspan="3">Usage read</th>
   </tr>
   <tr>
     <th>Command</th>
@@ -1236,8 +1236,8 @@ To display the full program help, use the `-a` or `--all` option, it will displa
   </tr>
   <tr>
     <td>Unknown encoding.</td>
-     <td>Failed to find the encoding, you specified the wrong encoding or the file cannot be opened with this encoding. (errors != ignore).</td>
-    </tr>
+    <td>Failed to find the encoding, you specified the wrong encoding or the file cannot be opened with this encoding. (errors != ignore).</td>
+  </tr>
 </table>
 
 ## sum
@@ -1263,7 +1263,7 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <th>Description</th>
   </tr>
   <tr>
-    <tr>
+  <tr>
     <td>--adler32</td>
     <td>https://en.wikipedia.org/wiki/Adler-32</td>
   </tr>
@@ -1360,7 +1360,7 @@ To display the full program help, use the `-a` or `--all` option, it will displa
     <td>Hashing a string with all functions. For the place of a specific function, everything at once.</td>
   </tr>
 </table>
-  </tr>
+</tr>
 </table>
 <table>
   <tr>
@@ -1405,6 +1405,49 @@ To display the full program help, use the `-a` or `--all` option, it will displa
   </tr>
   <tr>
     <td>There are not enough parameters to execute the command `sum`.</td>
-     <td>Apparently you didn't specify any parameters. This command will not work without parameters.</td>
-    </tr>
+    <td>Apparently you didn't specify any parameters. This command will not work without parameters.</td>
+  </tr>
+</table>
+
+## system
+<table>
+  <tr>
+    <th colspan="2">Command system</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th colspan="2">Description</th>
+  </tr>
+  <tr>
+    <td>system</td>
+    <td>Execute an external command in a shell.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Options system</th>
+  </tr>
+  <tr>
+    <th>Options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>echo Hello, world!</td>
+    <td>The external `echo` command will be executed.</td>
+  </tr>
+</table>
+
+## version
+<table>
+  <tr>
+    <th colspan="2">Command version</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th colspan="2">Description</th>
+  </tr>
+  <tr>
+    <td>version</td>
+    <td>Display the current version of the program.</td>
+  </tr>
 </table>

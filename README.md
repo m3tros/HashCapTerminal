@@ -5,7 +5,9 @@
 HashCap version [Command Line Interpreter | Terminal] program for working with hash functions.<br>
 This program is implemented in <a href="https://www.python.org/">Python</a> version <a href="https://www.python.org/downloads/release/python-3104/">3.10.4</a>. The library for getting data from the user is <a href="https://pypi.org/project/prompt-toolkit/">prompt_toolkit</a>.<br>
 Hashcap implements the conversion of a string into a hash, iteration of hashes, as well as getting the checksum of files.<br>
-<p align="center"><img src="https://user-images.githubusercontent.com/107058068/179056663-b1c47324-cdba-4af0-80b4-45e78698c777.png" alt="HashCapTerminal"></p>
+<p align="center">
+
+![image](https://user-images.githubusercontent.com/107058068/179056663-b1c47324-cdba-4af0-80b4-45e78698c777.png)
 
 > Current version: 1.0
 
@@ -247,7 +249,6 @@ To exit the program, you can press `Ctrl+C`. To stop Brute-force press all the s
 ## All commands
 To display help for a specific command, you must add the name of the command after the `help` command.<br>
 To display the full program help, use the `-a` or `--all` option, it will display the help of all commands.<br>
-
 <table>
   <tr>
     <th colspan="2">All commands</th>
@@ -329,6 +330,8 @@ To display the full program help, use the `-a` or `--all` option, it will displa
 > Click on the command you need in the table, the link will take you to its help.
 
 ## brute
+![image](https://user-images.githubusercontent.com/107058068/179058770-80537b3b-fdcf-4c3b-a890-150c6d42a120.png)
+
 <table>
   <tr>
     <th colspan="2">Command brute</th>
@@ -808,6 +811,8 @@ To display the full program help, use the `-a` or `--all` option, it will displa
 > Commands such as file or folder are combined into one help because they work the same `almost` but the errors are the same `only handled by the program`. I just didn't want to write the same text twice.
 
 ## hash
+![image](https://user-images.githubusercontent.com/107058068/179059858-c8c5cf37-cae1-4ea4-a8d0-8b419a1a8e73.png)
+
 <table>
   <tr>
     <th colspan="2">Command hash</th>
@@ -1283,6 +1288,8 @@ To display the full program help, use the `-a` or `--all` option, it will displa
 </table>
 
 ## sum
+![image](https://user-images.githubusercontent.com/107058068/179059304-182e2282-1943-46b6-9153-e506cd3ca681.png)
+
 <table>
   <tr>
     <th colspan="2">Command sum</th>

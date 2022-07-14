@@ -201,7 +201,7 @@ To exit the program, you can press `Ctrl+C`. To stop Brute-force press all the s
 > In the future, the list will expand.
 
 # Usage
-## Help
+## All commands
 To display help for a specific command, you must add the name of the command after the `help` command.<br>
 To display the full program help, use the `-a` or `--all` option, it will display the help of all commands.<br>
 

@@ -600,20 +600,6 @@ To display the full program help, use the `-a` or `--all` option, it will displa
   </tr>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## echo
 <table>
   <tr>
@@ -676,16 +662,105 @@ To display the full program help, use the `-a` or `--all` option, it will displa
   </tr>
 </table>
 
+## exit
+<table>
+  <tr>
+    <th colspan="2">Command exit</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th colspan="2">Description</th>
+  </tr>
+  <tr>
+    <td>exit</td>
+    <td>Exiting the program.</td>
+  </tr>
+</table>
+
+## file
+<table>
+  <tr>
+    <th colspan="2">Command file</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th colspan="2">Description</th>
+  </tr>
+  <tr>
+    <td>file</td>
+    <td>Command for working with files.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="2">Options file</th>
+  </tr>
+  <tr>
+    <th>Options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>-c, --create</td>
+    <td>Create file.</td>
+  </tr>
+  <tr>
+    <td>-r, --remove</td>
+    <td>Delete a file.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <th colspan="3">Usage file</th>
+  </tr>
+  <tr>
+    <th>Command</th>
+    <th>File options</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>file</td>
+    <td>-c test.txt</td>
+    <td>The file `test.txt` will be created.</td>
+  </tr>
+  <tr>
+    <td>file</td>
+    <td>-r tеst.txt</td>
+    <td>The file `test.txt` will be removed.</td>
+  </tr>
+</table>
 
 
 
 
 
-
-
-
-
-
-
-
-
+<table>
+  <tr>
+    <th colspan="2">Mistakes</th>
+  </tr>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  
+  <tr>
+  <td>Unknown parameter.</td>
+  <td>Could not find the parameter to execute the command, please note the syntax of writing.</td>
+  </tr>
+  
+  <tr>
+  <td>You did not enter a file name.</td>
+  <td>Apparently you did not specify the file name, pay attention to the syntax for writing the command.</td>
+  </tr>
+  <tr>
+  <td>Failed to create file.</td>
+  <td>For some reason, the file could not be created.</td>
+  </tr>
+  <tr>
+  <td>Failed to delete file.</td>
+  <td>Apparently for some reason it was not possible to delete the file.</td>
+  </tr>
+  <tr>
+  <td>There are not enough parameters to execute the command `file`.</td>
+  <td>Apparently you didn't specify any parameters. This command will not work without parameters.</td>
+  </tr>
+</table>

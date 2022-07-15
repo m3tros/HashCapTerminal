@@ -18,10 +18,6 @@ Hashcap implements the conversion of a string into a hash, iteration of hashes, 
     <th>Pip</th>
   </tr>
   <tr>
-    <td><a href="https://pypi.org/project/hashlib/">hashlib</a></td>
-    <td>pip install hashlib</td>
-  </tr>
-  <tr>
     <td><a href="https://pypi.org/project/pysha3">pysha3</a></td>
     <td>pip install pysha3</td>
   </tr>

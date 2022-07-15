@@ -784,7 +784,7 @@ class Main:
                     self.brute = True
                     break
                 else:
-                    sys.stdout.write(f'{Fore.BLUE}[*]{Fore.WHITE} Processed combinations: {line}\r')
+                    sys.stdout.write(f'{Fore.BLUE}[i]{Fore.WHITE} Processed combinations: {line}\r')
                     sys.stdout.flush()
             if self.brute == False:
                 Display.display_error('Nothing was found.', start='\n\n')

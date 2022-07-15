@@ -691,10 +691,9 @@ class Main:
         try:
             self.input_line = self.terminal_session.prompt(self.terminal_text.format(os.getcwd()), cursor=CursorShape.BLINKING_BEAM)
         except KeyboardInterrupt:
-            Display.display_exit_program()
-            sys.exit()
+            self.command_exit()
         except EOFError:
-            pass
+            self.command_exit()
         if self.terminal_cleaning == True:
             Display.display_clear()
         if self.input_line.replace(' ', '') != '':            
@@ -836,7 +835,11 @@ class Main:
                 print(' '.join(self.input_line_split))
         except IndexError:
             print()
-            
+    
+    def command_exit(self): 
+        Display.display_exit_program()
+        sys.exit()  
+
     def command_file(self):
         try:
             if self.input_line_split[1].lower() == '--create' or self.input_line_split[1].lower() == '-c':

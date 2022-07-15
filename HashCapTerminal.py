@@ -692,7 +692,9 @@ class Main:
             self.input_line = self.terminal_session.prompt(self.terminal_text.format(os.getcwd()), cursor=CursorShape.BLINKING_BEAM)
         except KeyboardInterrupt:
             Display.display_exit_program()
-            sys.exit()                                         
+            sys.exit()
+        except EOFError:
+            pass
         if self.terminal_cleaning == True:
             Display.display_clear()
         if self.input_line.replace(' ', '') != '':            

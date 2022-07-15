@@ -1,4 +1,3 @@
-hashlib
 pysha3
 whirlpool
 colorama

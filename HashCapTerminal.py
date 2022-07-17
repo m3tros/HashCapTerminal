@@ -482,10 +482,10 @@ class Display:
         print(f'{start}{Fore.RED}[e]{Fore.WHITE} {text}', end=end)
     
     def display_version_program():
-        Display.display_message(f'Metros hashcap terminal (version {__version__}).')
+        Display.display_message(f'Metros HashCap Terminal (version {__version__}).')
 
     def display_exit_program():
-        Display.display_message('Metros hashcap terminal completion of work...', start='\n')
+        Display.display_message('Metros HashCap Terminal Completion of work...', start='\n')
     
     def display_clear():
         os.system('cls' if os.name == 'nt' else 'clear')

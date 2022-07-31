@@ -142,22 +142,22 @@ To exit the program, you can press `Ctrl+C`. To stop Brute-force press all the s
     <td><a href="https://en.wikipedia.org/wiki/Cyclic_redundancy_check">CRC32</a></td>
   </tr>
   <tr>
-    <td>keccak224</td>
+    <td><a href="https://github.com/tiran/pysha3/blob/master/README.txt">keccak224</a></td>
     <td><a href="https://pypi.org/project/pysha3">pysha3</a></td>
     <td><a href="https://en.wikipedia.org/wiki/SHA-3">SHA3</a></td>
   </tr>
   <tr>
-    <td>keccak256</td>
+    <td><a href="https://github.com/tiran/pysha3/blob/master/README.txt">keccak256</a></td>
     <td><a href="https://pypi.org/project/pysha3">pysha3</a></td>
     <td><a href="https://en.wikipedia.org/wiki/SHA-3">SHA3</a></td>
   </tr>
   <tr>
-    <td>keccak384</td>
+    <td><a href="https://github.com/tiran/pysha3/blob/master/README.txt">keccak384</a></td>
     <td><a href="https://pypi.org/project/pysha3">pysha3</a></td>
     <td><a href="https://en.wikipedia.org/wiki/SHA-3">SHA3</a></td>
   </tr>
   <tr>
-    <td>keccak512</td>
+    <td><a href="https://github.com/tiran/pysha3/blob/master/README.txt">keccak512</a></td>
     <td><a href="https://pypi.org/project/pysha3">pysha3</a></td>
     <td><a href="https://en.wikipedia.org/wiki/SHA-3">SHA3</a></td>
   </tr>
@@ -232,7 +232,7 @@ To exit the program, you can press `Ctrl+C`. To stop Brute-force press all the s
     <td><a href="https://en.wikipedia.org/wiki/SHA-3">SHA3</a></td>
   </tr>
   <tr>
-    <td>whirlpool</td>
+    <td><a href="https://github.com/oohlaf/python-whirlpool">whirlpool</a></td>
     <td><a href="https://pypi.org/project/Whirlpool/">whirlpool</a></td>
     <td><a href="https://en.wikipedia.org/wiki/Whirlpool_(hash_function)">WHIRLPOOL</a></td>
   </tr>

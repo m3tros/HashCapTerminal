@@ -1502,7 +1502,7 @@ There are a lot of compilers for python, but I will use <a href="https://pypi.or
 ```
 pyinstaller -F HashCapTerminal.py
 ```
-After compilation, one executable file will appear in the dist folder. In order to change the icon, add the parameter `--icon=ICON_NAME`.
+After compilation, one executable file will appear in the dist folder. In order to change the icon, add the parameter `--icon=ICON_PATH`.
 
 ## From developer
 Please report all problems / errors so that they can be fixed in time, I think there are enough of them.

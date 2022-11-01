@@ -8,6 +8,8 @@ import hashlib
 import sha3 
 import whirlpool
 import colorama
+import hashbase
+
 from datetime import timedelta
 from datetime import datetime
 from colorama import Fore
@@ -15,9 +17,8 @@ from prompt_toolkit import prompt
 from prompt_toolkit.history import FileHistory
 from prompt_toolkit import PromptSession
 from prompt_toolkit.formatted_text import HTML
-from prompt_toolkit.cursor_shapes import CursorShape
 
-__version__ = 1.0
+__version__ = 1.1
 
 __help__ = '''All commands
 ============
@@ -472,22 +473,23 @@ class Display:
     And also for displaying the version, shutting down and clearing the terminal.
     '''
 
-    def display_message(text, start='', end='\n'):
+    def message(text, start='', end='\n'):
         print(f'{start}{Fore.BLUE}[i]{Fore.WHITE} {text}', end=end)
     
-    def display_warning(text, start='', end='\n'):
+    def warning(text, start='', end='\n'):
         print(f'{start}{Fore.YELLOW}[w]{Fore.WHITE} {text}', end=end)
         
-    def display_error(text, start='', end='\n'):
+    def error(text, start='', end='\n'):
         print(f'{start}{Fore.RED}[e]{Fore.WHITE} {text}', end=end)
     
-    def display_version_program():
-        Display.display_message(f'Metros HashCap Terminal (version {__version__}).')
+    def version_program():
+        Display.message(f'Metros HashCap Terminal (version {__version__}).')
 
-    def display_exit_program():
-        Display.display_message('Metros HashCap Terminal Completion of work...', start='\n')
-    
-    def display_clear():
+    def exit_program():
+        Display.message('Metros HashCap Terminal Completion of work...', start='\n')
+        sys.exit()  
+        
+    def clear():
         os.system('cls' if os.name == 'nt' else 'clear')
 
 
@@ -498,99 +500,115 @@ class Hash:
     get the hash sum of a file, and for brute force.
     '''
     
-    def hash_adler32(string):
+    def adler32(string):
         return zlib.adler32(string)
         
-    def hash_blake2b(string):
+    def blake2b(string):
         return hashlib.blake2b(string).hexdigest()
     
-    def hash_blake2s(string):
+    def blake2s(string):
         return hashlib.blake2s(string).hexdigest()
     
-    def hash_crc32(string):
+    def crc32(string):
         return zlib.crc32(string)
     
-    def hash_keccak224(string):
+    def keccak224(string):
         return sha3.keccak_224(string).hexdigest()
     
-    def hash_keccak256(string):
+    def keccak256(string):
         return sha3.keccak_256(string).hexdigest()
     
-    def hash_keccak384(string):
+    def keccak384(string):
         return sha3.keccak_384(string).hexdigest()
     
-    def hash_keccak512(string):
+    def keccak512(string):
         return sha3.keccak_512(string).hexdigest()
     
-    def hash_md4(string):
+    def md2(string):
+        return hashbase.MD2().generate_hash(string.decode())
+
+    def md4(string):
         return hashlib.new('md4', string).hexdigest()
 
-    def hash_md5(string):
+    def md5(string):
         return hashlib.md5(string).hexdigest()
     
-    def hash_ripemd160(string):
+    def ripemd128(string):
+        return hashbase.RIPEMD128().generate_hash(string.decode())
+    
+    def ripemd160(string):
         return hashlib.new('ripemd160', string).hexdigest()
     
-    def hash_sha1(string):
+    def ripemd256(string):
+        return hashbase.RIPEMD256().generate_hash(string.decode())
+    
+    def ripemd320(string):
+        return hashbase.RIPEMD320().generate_hash(string.decode())
+
+    def sha1(string):
         return hashlib.sha1(string).hexdigest()
     
-    def hash_sha224(string):
+    def sha224(string):
         return hashlib.sha224(string).hexdigest()
     
-    def hash_sha256(string):
+    def sha256(string):
         return hashlib.sha256(string).hexdigest()
     
-    def hash_sha384(string):
+    def sha384(string):
         return hashlib.sha384(string).hexdigest()
     
-    def hash_sha512(string):
+    def sha512(string):
         return hashlib.sha512(string).hexdigest()
    
-    def hash_sha3_224(string):
+    def sha3_224(string):
         return hashlib.sha3_224(string).hexdigest()
     
-    def hash_sha3_256(string):
+    def sha3_256(string):
         return hashlib.sha3_256(string).hexdigest()
     
-    def hash_sha3_384(string):
+    def sha3_384(string):
         return hashlib.sha3_384(string).hexdigest()
     
-    def hash_sha3_512(string):
+    def sha3_512(string):
         return hashlib.sha3_512(string).hexdigest()
     
-    def hash_shake128(string):
+    def shake128(string):
         return hashlib.shake_128(string).hexdigest(32)
     
-    def hash_shake256(string):
+    def shake256(string):
         return hashlib.shake_256(string).hexdigest(32)
     
-    def hash_whirlpool(string):
+    def whirlpool(string):
         return whirlpool.new(string).hexdigest()
     
-    def hash_all(string):
-        return [f'adler32    ➜ {Hash.hash_adler32(string)}',
-                f'blake2b    ➜ {Hash.hash_blake2b(string)}',
-                f'blake2s    ➜ {Hash.hash_blake2s(string)}',
-                f'crc32      ➜ {Hash.hash_crc32(string)}',
-                f'keccak224  ➜ {Hash.hash_keccak224(string)}',
-                f'keccak256  ➜ {Hash.hash_keccak256(string)}',
-                f'keccak384  ➜ {Hash.hash_keccak384(string)}',
-                f'keccak512  ➜ {Hash.hash_keccak512(string)}',
-                f'md4        ➜ {Hash.hash_md4(string)}',
-                f'md5        ➜ {Hash.hash_md5(string)}',
-                f'ripemd160  ➜ {Hash.hash_ripemd160(string)}',
-                f'sha1       ➜ {Hash.hash_sha1(string)}',
-                f'sha224     ➜ {Hash.hash_sha224(string)}',
-                f'sha256     ➜ {Hash.hash_sha256(string)}',
-                f'sha384     ➜ {Hash.hash_sha384(string)}',
-                f'sha512     ➜ {Hash.hash_sha512(string)}',
-                f'sha3-224   ➜ {Hash.hash_sha3_224(string)}',
-                f'sha3-256   ➜ {Hash.hash_sha3_256(string)}',
-                f'sha3-384   ➜ {Hash.hash_sha3_384(string)}',
-                f'sha3-512   ➜ {Hash.hash_sha3_512(string)}',
-                f'shake128   ➜ {Hash.hash_shake128(string)}',
-                f'shake256   ➜ {Hash.hash_shake256(string)}',
-                f'whirlpool  ➜ {Hash.hash_whirlpool(string)}']
+    def all(string):
+        return [f'adler32    ➜ {Hash.adler32(string)}',
+                f'blake2b    ➜ {Hash.blake2b(string)}',
+                f'blake2s    ➜ {Hash.blake2s(string)}',
+                f'crc32      ➜ {Hash.crc32(string)}',
+                f'keccak224  ➜ {Hash.keccak224(string)}',
+                f'keccak256  ➜ {Hash.keccak256(string)}',
+                f'keccak384  ➜ {Hash.keccak384(string)}',
+                f'keccak512  ➜ {Hash.keccak512(string)}',
+                f'md2        ➜ {Hash.md2(string)}',
+                f'md4        ➜ {Hash.md4(string)}',
+                f'md5        ➜ {Hash.md5(string)}',
+                f'ripemd128  ➜ {Hash.ripemd128(string)}',
+                f'ripemd160  ➜ {Hash.ripemd160(string)}',
+                f'ripemd256  ➜ {Hash.ripemd256(string)}',
+                f'ripemd320  ➜ {Hash.ripemd320(string)}',
+                f'sha1       ➜ {Hash.sha1(string)}',
+                f'sha224     ➜ {Hash.sha224(string)}',
+                f'sha256     ➜ {Hash.sha256(string)}',
+                f'sha384     ➜ {Hash.sha384(string)}',
+                f'sha512     ➜ {Hash.sha512(string)}',
+                f'sha3-224   ➜ {Hash.sha3_224(string)}',
+                f'sha3-256   ➜ {Hash.sha3_256(string)}',
+                f'sha3-384   ➜ {Hash.sha3_384(string)}',
+                f'sha3-512   ➜ {Hash.sha3_512(string)}',
+                f'shake128   ➜ {Hash.shake128(string)}',
+                f'shake256   ➜ {Hash.shake256(string)}',
+                f'whirlpool  ➜ {Hash.whirlpool(string)}']
     
     def action_check(type, hash, string):
         def file_as_bytes(file):
@@ -604,57 +622,63 @@ class Hash:
         
     def get_hash(hash, string):
         if hash == '--adler32':
-            return Hash.hash_adler32(string)
+            return Hash.adler32(string)
         elif hash == '--blake2b':
-            return Hash.hash_blake2b(string)
+            return Hash.blake2b(string)
         elif hash == '--blake2s':
-            return Hash.hash_blake2s(string)
+            return Hash.blake2s(string)
         elif hash == '--crc32':
-            return Hash.hash_crc32(string)
+            return Hash.crc32(string)
         elif hash == '--keccak224':
-            return Hash.hash_keccak224(string)
+            return Hash.keccak224(string)
         elif hash == '--keccak256':
-            return Hash.hash_keccak256(string)
+            return Hash.keccak256(string)
         elif hash == '--keccak384':
-            return Hash.hash_keccak384(string)
+            return Hash.keccak384(string)
         elif hash == '--keccak512':
-            return Hash.hash_keccak512(string)
+            return Hash.keccak512(string)
         elif hash == '--md4':
-            return Hash.hash_md4(string)
+            return Hash.md4(string)
         elif hash == '--md5':
-            return Hash.hash_md5(string)
+            return Hash.md5(string)
+        elif hash == '--ripemd128':
+            return Hash.ripemd128(string)
         elif hash == '--ripemd160':
-            return Hash.hash_ripemd160(string)
+            return Hash.ripemd160(string)
+        elif hash == '--ripemd256':
+            return Hash.ripemd256(string)
+        elif hash == '--ripemd320':
+            return Hash.ripemd320(string)
         elif hash == '--sha1':
-            return Hash.hash_sha1(string)
+            return Hash.sha1(string)
         elif hash == '--sha224':
-            return Hash.hash_sha224(string)
+            return Hash.sha224(string)
         elif hash == '--sha256':
-            return Hash.hash_sha256(string)
+            return Hash.sha256(string)
         elif hash == '--sha384':
-            return Hash.hash_sha384(string)
+            return Hash.sha384(string)
         elif hash == '--sha512':
-            return Hash.hash_sha512(string)
+            return Hash.sha512(string)
         elif hash == '--sha3-224':
-            return Hash.hash_sha3_224(string)
+            return Hash.sha3_224(string)
         elif hash == '--sha3-256':
-            return Hash.hash_sha3_256(string)
+            return Hash.sha3_256(string)
         elif hash == '--sha3-384':
-            return Hash.hash_sha3_384(string)
+            return Hash.sha3_384(string)
         elif hash == '--sha3-512':
-            return Hash.hash_sha3_512(string)
+            return Hash.sha3_512(string)
         elif hash == '--shake128':
-            return Hash.hash_shake128(string)
+            return Hash.shake128(string)
         elif hash == '--shake256':
-            return Hash.hash_shake256(string)
+            return Hash.shake256(string)
         elif hash == '--whirlpool':
-            return Hash.hash_whirlpool(string)
+            return Hash.whirlpool(string)
         elif hash == '--all' or hash == '-a':
-            for i in Hash.hash_all(string):
-                Display.display_message(i)
+            for i in Hash.all(string):
+                Display.message(i)
             return False
         else:
-            Display.display_error('Could not find hash: {}'.format(hash.replace('--', '')))
+            Display.error('Could not find hash: {}'.format(hash.replace('--', '')))
             return False
         
 
@@ -677,9 +701,9 @@ class Main:
     terminal_while = True
     terminal_cleaning = False
     current_path = os.path.split(os.path.abspath(__file__))[0]
-    terminal_prompt_history = os.path.abspath(f'{current_path}/.hashcap_terminal_history')
+    terminal_prompt_history = os.path.abspath(f'{current_path}/.hashcap_history')
     terminal_session = PromptSession(history=FileHistory(terminal_prompt_history))
-    terminal_text = HTML('\n[HashCap Terminal] (<b>{}</b>) $ ')
+    terminal_text = HTML('''\n[<font color="#008000">HashCapTerminal</font>] (<b>{}</b>) \n$ ''')
     terminal_tmp_text = terminal_text
     
     def __init__(self, *args, **kwargs):
@@ -689,19 +713,19 @@ class Main:
     
     def init_input(self):
         try:
-            self.input_line = self.terminal_session.prompt(self.terminal_text.format(os.getcwd()), cursor=CursorShape.BLINKING_BEAM)
+            self.input_line = self.terminal_session.prompt(self.terminal_text.format(os.getcwd()))
         except KeyboardInterrupt:
             self.command_exit()
         except EOFError:
             self.command_exit()
         if self.terminal_cleaning == True:
-            Display.display_clear()
+            Display.clear()
         if self.input_line.replace(' ', '') != '':            
             self.input_line_split = shlex.split(self.input_line.replace('\\', '/'))
             try:
                 self.input_validation()
             except PermissionError:
-                Display.display_error(f'Not enough permissions to execute the command: {self.input_line}')
+                Display.error(f'Not enough permissions to execute the command: {self.input_line}')
             except UnboundLocalError:
                 pass
     
@@ -739,30 +763,30 @@ class Main:
         elif self.input_line_split[0].lower() == 'system':
             self.command_system()
         elif self.input_line_split[0].lower() == 'version':
-            Display.display_version_program()
+            Display.version_program()
         else:
-            Display.display_error(f'Command not found: {self.input_line}')
+            Display.error(f'Command not found: {self.input_line}')
     
     def command_brute(self):        
         self.brute = False
         time_start_brute_force = time.monotonic()
-        Display.display_message('Hash type\t\t : {}'.format(self.input_line_split[1].replace('--', '').lower()))
-        Display.display_message(f'Hash target\t\t : {self.input_line_split[2]}')
+        Display.message('Hash type\t\t : {}'.format(self.input_line_split[1].replace('--', '').lower()))
+        Display.message(f'Hash target\t\t : {self.input_line_split[2]}')
         try:
             self.command_brute_start()
         except IndexError:
-            Display.display_error('There are not enough parameters to execute the command `brute`.')
+            Display.error('There are not enough parameters to execute the command `brute`.')
             return
         except KeyboardInterrupt:
-            Display.display_message('Completion of brute force...', start='\n')
+            Display.message('Completion of brute force...', start='\n')
             return
-        Display.display_message('Runtime: {}'.format(timedelta(seconds=time.monotonic() - time_start_brute_force)), start='\n')
+        Display.message('Runtime: {}'.format(timedelta(seconds=time.monotonic() - time_start_brute_force)), start='\n')
 
     def command_brute_start(self):
         line = 0
         try:
             if self.input_line_split[1].lower() == '--all' or self.input_line_split[1].lower() == '-a':
-                Display.display_error('There must be an exact parameter here. The `--all` option is not applicable here.')
+                Display.error('There must be an exact parameter here. The `--all` option is not applicable here.')
                 return
         except IndexError:
             pass
@@ -770,25 +794,25 @@ class Main:
             try:
                 dictionary = open(self.input_line_split[3], 'r', encoding='latin-1')
             except Exception as error_open_file:
-                Display.display_error(f'An error occurred while opening the dictionary file ({self.input_line_split[3]}): {error_open_file}')
-            Display.display_message(f'Path dictionary\t : {self.input_line_split[3]}')
-            Display.display_message('Start date and time\t : {}\n'.format(datetime.now().strftime('%d.%m.%Y %H:%M:%S')))
+                Display.error(f'An error occurred while opening the dictionary file ({self.input_line_split[3]}): {error_open_file}')
+            Display.message(f'Path dictionary\t : {self.input_line_split[3]}')
+            Display.message('Start date and time\t : {}\n'.format(datetime.now().strftime('%d.%m.%Y %H:%M:%S')))
             for i in dictionary: 
                 line += 1
                 i = i.rstrip()
                 hash = Hash.action_check('hash', self.input_line_split[1].lower(), i)
                 if self.input_line_split[2] == hash:
-                    Display.display_message(f'{self.input_line_split[2]}:{i}')
-                    Display.display_message('Result {}: {}'.format(self.input_line_split[1].replace('--', '').lower(), i))
+                    Display.message(f'{self.input_line_split[2]}:{i}')
+                    Display.message('Result {}: {}'.format(self.input_line_split[1].replace('--', '').lower(), i))
                     self.brute = True
                     break
                 else:
                     sys.stdout.write(f'{Fore.BLUE}[i]{Fore.WHITE} Processed combinations: {line}\r')
                     sys.stdout.flush()
             if self.brute == False:
-                Display.display_error('Nothing was found.', start='\n\n')
+                Display.error('Nothing was found.', start='\n\n')
         elif os.path.isfile(self.input_line_split[3]) == False:
-            Display.display_error(f'Could not find dictionary file: {self.input_line_split[3]}', start='\n')
+            Display.error(f'Could not find dictionary file: {self.input_line_split[3]}', start='\n')
     
     def command_cd(self):
         try:
@@ -797,7 +821,7 @@ class Main:
                 if self.terminal_text != '':
                     self.terminal_text = self.terminal_tmp_text.format(os.getcwd())
             else:
-                Display.display_error(f'Could not find directory: {self.input_line_split[1]}')
+                Display.error(f'Could not find directory: {self.input_line_split[1]}')
         except IndexError:
             self.command_pwd()
      
@@ -805,14 +829,14 @@ class Main:
         try:
             if self.input_line_split[1].lower() == '--enable' or self.input_line_split[1].lower() == '--on' or self.input_line_split[1].lower() == '-e':
                 self.terminal_cleaning = True
-                Display.display_message('Enabled screen clearing after command input.')
+                Display.message('Enabled screen clearing after command input.')
             elif self.input_line_split[1].lower() == '--disable' or self.input_line_split[1].lower() == '--off' or self.input_line_split[1].lower() == '-d':
                 self.terminal_cleaning = False
-                Display.display_message('Disabled screen clearing after command input.')
+                Display.message('Disabled screen clearing after command input.')
             else:
-                Display.display_error(f'Unknown parameter: {self.input_line_split[1]}')
+                Display.error(f'Unknown parameter: {self.input_line_split[1]}')
         except IndexError:
-            Display.display_clear()
+            Display.clear()
     
     def command_dir(self):
         try:
@@ -826,10 +850,10 @@ class Main:
         try:
             if self.input_line_split[1].lower() == '--enable' or self.input_line_split[1].lower() == '--on' or self.input_line_split[1].lower() == '-e':
                 self.terminal_text = self.terminal_tmp_text
-                Display.display_message('Enabled command output mode on the screen.')
+                Display.message('Enabled command output mode on the screen.')
             elif self.input_line_split[1].lower() == '--disable' or self.input_line_split[1].lower() == '--off' or self.input_line_split[1].lower() == '-d':
                 self.terminal_text = ''
-                Display.display_message('Disabled command output mode on the screen.')
+                Display.message('Disabled command output mode on the screen.')
             else:
                 del self.input_line_split[0]
                 print(' '.join(self.input_line_split))
@@ -837,8 +861,7 @@ class Main:
             print()
     
     def command_exit(self): 
-        Display.display_exit_program()
-        sys.exit()  
+        Display.exit_program()
 
     def command_file(self):
         try:
@@ -847,29 +870,29 @@ class Main:
                     with open(self.input_line_split[2], 'w') as create_file:
                         create_file.write('')
                     if os.path.isfile(self.input_line_split[2]) == True:
-                        Display.display_message(f'The file has been successfully created: {self.input_line_split[2]}')
+                        Display.message(f'The file has been successfully created: {self.input_line_split[2]}')
                     elif os.path.isfile(self.input_line_split[2]) == False:
-                        Display.display_message(f'Failed to create file: {self.input_line_split[2]}')
+                        Display.message(f'Failed to create file: {self.input_line_split[2]}')
                 except IndexError:
-                    Display.display_error('You did not enter a file name.')
+                    Display.error('You did not enter a file name.')
                 except IsADirectoryError:
                     pass
             elif self.input_line_split[1].lower() == '--remove' or self.input_line_split[1].lower() == '-r':
                 try:
                     if os.path.isfile(self.input_line_split[2]) == False:
-                        Display.display_error(f'Could not find file: {self.input_line_split[2]}')
+                        Display.error(f'Could not find file: {self.input_line_split[2]}')
                     elif os.path.isfile(self.input_line_split[2]) == True:
                         os.remove(self.input_line_split[2])
                         if os.path.isfile(self.input_line_split[2]) == False:
-                            Display.display_warning(f'The file has been successfully deleted: {self.input_line_split[2]}')
+                            Display.warning(f'The file has been successfully deleted: {self.input_line_split[2]}')
                         elif os.path.isfile(self.input_line_split[2]) == True:
-                            Display.display_error(f'Failed to delete file: {self.input_line_split[2]}')
+                            Display.error(f'Failed to delete file: {self.input_line_split[2]}')
                 except IndexError:
-                    Display.display_error('You did not enter a file name.')
+                    Display.error('You did not enter a file name.')
             else:
-                Display.display_error(f'Unknown parameter: {self.input_line_split[1]}')
+                Display.error(f'Unknown parameter: {self.input_line_split[1]}')
         except IndexError:
-            Display.display_error('There are not enough parameters to execute the command `file`.')
+            Display.error('There are not enough parameters to execute the command `file`.')
                 
     def command_folder(self):
         try:
@@ -877,11 +900,11 @@ class Main:
                 try:
                     os.mkdir(self.input_line_split[2])
                     if os.path.isdir(self.input_line_split[2]) == True:
-                        Display.display_message(f'The folder has been successfully created: {self.input_line_split[2]}')
+                        Display.message(f'The folder has been successfully created: {self.input_line_split[2]}')
                     elif os.path.isdir(self.input_line_split[2]) == False:
-                        Display.display_error(f'Failed to create folder: {self.input_line_split[2]}')
+                        Display.error(f'Failed to create folder: {self.input_line_split[2]}')
                 except IndexError:
-                    Display.display_error('You did not enter a folder name.')
+                    Display.error('You did not enter a folder name.')
                 except FileExistsError:
                     pass
             elif self.input_line_split[1].lower() == '--remove' or self.input_line_split[1].lower() == '-r':
@@ -889,17 +912,17 @@ class Main:
                     if os.path.isdir(self.input_line_split[2]) == True:
                         os.rmdir(self.input_line_split[2])
                         if os.path.isfile(self.input_line_split[2]) == False:
-                            Display.display_warning(f'The folder has been successfully deleted: {self.input_line_split[2]}')
+                            Display.warning(f'The folder has been successfully deleted: {self.input_line_split[2]}')
                         elif os.path.isdir(self.input_line_split[2]) == True:
-                            Display.display_error(f'Failed to delete folder: {self.input_line_split[2]}')
+                            Display.error(f'Failed to delete folder: {self.input_line_split[2]}')
                     elif os.path.isdir(self.input_line_split[2]) == False: 
-                        Display.display_error(f'Could not find folder: {self.input_line_split[2]}')
+                        Display.error(f'Could not find folder: {self.input_line_split[2]}')
                 except IndexError:
-                    Display.display_error('You did not enter a folder name.')
+                    Display.error('You did not enter a folder name.')
             else:
-                Display.display_error(f'Unknown parameter: {self.input_line_split[1]}')
+                Display.error(f'Unknown parameter: {self.input_line_split[1]}')
         except IndexError:
-            Display.display_error('There are not enough parameters to execute the command `folder`.')
+            Display.error('There are not enough parameters to execute the command `folder`.')
     
     def command_hash(self):
         try:
@@ -908,23 +931,23 @@ class Main:
                     string_1 = self.input_line_split[2]
                     string_2 = self.input_line_split[4]
                 else:
-                    string_1 = Hash.action_check('hash',  self.input_line_split[1].lower(), self.input_line_split[2])
-                    string_2 = Hash.action_check('hash',  self.input_line_split[1].lower(), self.input_line_split[4])
+                    string_1 = Hash.action_check('hash', self.input_line_split[1].lower(), self.input_line_split[2])
+                    string_2 = Hash.action_check('hash', self.input_line_split[1].lower(), self.input_line_split[4])
                 if string_1 == self.input_line_split[4]:
-                    Display.display_message('Equals.')
+                    Display.message('Equals.')
                 elif self.input_line_split[2] == string_2:
-                    Display.display_message('Equals.')
+                    Display.message('Equals.')
                 else:
-                    Display.display_warning('Does not equal.')
+                    Display.warning('Does not equal.')
                 return
         except IndexError:
             pass
         try:
             function_return_hash = Hash.action_check('hash', self.input_line_split[1].lower(), self.input_line_split[2])
             if function_return_hash != False:
-                Display.display_message(function_return_hash)
+                Display.message(function_return_hash)
         except IndexError:
-            Display.display_error('There are not enough parameters to execute the command `hash`.')
+            Display.error('There are not enough parameters to execute the command `hash`.')
             return
 
     def command_help(self):
@@ -949,7 +972,7 @@ class Main:
                           __system__,
                           __hversion__]:
                     print(i)
-                Display.display_message('Learn more: https://github.com/John-MetrosSoftware/HashCapTerminal', start='\n')
+                Display.message('Learn more: https://github.com/John-MetrosSoftware/HashCapTerminal', start='\n')
             elif self.input_line_split[1].lower() == '-g' or self.input_line_split[1].lower() == '--github':
                 webbrowser.open_new('https://github.com/John-MetrosSoftware/HashCapTerminal')
             elif self.input_line_split[1].lower() == 'brute':
@@ -988,10 +1011,10 @@ class Main:
                 print(__hversion__)
             else:
                 del self.input_line_split[0]
-                Display.display_error('Can\'t find help for command: {}'.format(' '.join(self.input_line_split)))
+                Display.error('Can\'t find help for command: {}'.format(' '.join(self.input_line_split)))
         except IndexError:
             print(__help__)
-            Display.display_message('Use the `help` command to display help for a specific command.', start='\n')
+            Display.message('Use the `help` command to display help for a specific command.', start='\n')
 
     def command_history(self):
         if os.path.isfile(self.terminal_prompt_history) == False:
@@ -1003,18 +1026,18 @@ class Main:
             elif self.input_line_split[1].lower() == '--clear-session' or self.input_line_split[1].lower() == '-s':
                 self.terminal_session = PromptSession(history=FileHistory(self.terminal_prompt_history))
                 self.command_history_remove_history_file()
-                Display.display_message('The history has been completely cleared.')
+                Display.message('The history has been completely cleared.')
             else:
-                Display.display_error(f'Unknown parameter: {self.input_line_split[1]}')
+                Display.error(f'Unknown parameter: {self.input_line_split[1]}')
         except IndexError:
             print(open(self.terminal_prompt_history).read())          
     
     def command_history_remove_history_file(self):
         os.remove(self.terminal_prompt_history)
         if os.path.isfile(self.terminal_prompt_history) == False:
-            Display.display_message('The history file has been cleared.')
+            Display.message('The history file has been cleared.')
         elif os.path.isfile(self.terminal_prompt_history) == True:
-            Display.display_error('The history file has not been cleared.')
+            Display.error('The history file has not been cleared.')
 
     def command_ls(self):
         try:
@@ -1032,13 +1055,13 @@ class Main:
             elif self.input_line_split[2].lower() == '--file' or self.input_line_split[2].lower() == '-f':
                 self.command_ls_file(directory)
         except FileNotFoundError:
-            Display.display_error(f'Could not find directory: {directory}')
+            Display.error(f'Could not find directory: {directory}')
         except IndexError:
             try:        
                 self.command_ls_file(directory)
                 self.command_ls_folder(directory)
             except FileNotFoundError:
-                Display.display_error(f'Could not find directory: {directory}')
+                Display.error(f'Could not find directory: {directory}')
             
     def command_ls_folder(self, directory):
         for folder in os.listdir(directory):
@@ -1051,7 +1074,7 @@ class Main:
                 print(file)
     
     def command_pwd(self):
-        Display.display_message(f'You are in directory: {os.getcwd()}')
+        Display.message(f'You are in directory: {os.getcwd()}')
                                   
     def command_read(self):
         try:
@@ -1062,14 +1085,14 @@ class Main:
             encoding = 'UTF-8'
         try:
             print(open(self.input_line_split[1], encoding=encoding).read())
-            Display.display_message(f'Read file: {self.input_line_split[1]} {encoding}')
+            Display.message(f'Read file: {self.input_line_split[1]} {encoding}')
         except IndexError:
-            Display.display_error('There are not enough parameters to execute the command `read`.')
+            Display.error('There are not enough parameters to execute the command `read`.')
             return
         except FileNotFoundError:
-            Display.display_error(f'Could not find the file: {self.input_line_split[1]}')
+            Display.error(f'Could not find the file: {self.input_line_split[1]}')
         except LookupError:
-            Display.display_error(f'Unknown encoding: {encoding}')  
+            Display.error(f'Unknown encoding: {encoding}')  
         except IsADirectoryError:
             pass
            
@@ -1080,18 +1103,18 @@ class Main:
                     if os.path.isfile(self.input_line_split[2]) == True:
                         string_1 = Hash.action_check('sum', self.input_line_split[1].lower(), self.input_line_split[2])
                         if string_1 == self.input_line_split[4]:
-                            Display.display_message('Equals.')
+                            Display.message('Equals.')
                         else:
-                            Display.display_warning('Does not equal.')
+                            Display.warning('Does not equal.')
                     elif os.path.isfile(self.input_line_split[2]) == False:
                         string_2 = Hash.action_check('sum', self.input_line_split[1].lower(), self.input_line_split[4])
                         if self.input_line_split[2] == string_2:
-                            Display.display_message('Equals.')
+                            Display.message('Equals.')
                         else:
-                            Display.display_warning('Does not equal.')
+                            Display.warning('Does not equal.')
                 except FileNotFoundError :
                     if os.path.isfile(self.input_line_split[2]) == False and os.path.isfile(self.input_line_split[4]) == False:
-                        Display.display_error('Could not find file. ')
+                        Display.error('Could not find file. ')
                 return
         except IndexError:
             pass     
@@ -1099,11 +1122,11 @@ class Main:
             if os.path.isfile(self.input_line_split[2]) == True:
                 function_return_hash = Hash.action_check('sum', self.input_line_split[1].lower(), self.input_line_split[2])
                 if function_return_hash != False:
-                    Display.display_message(function_return_hash)
+                    Display.message(function_return_hash)
             elif os.path.isfile(self.input_line_split[2]) == False:
-                Display.display_error(f'Could not find file: {self.input_line_split[2]}')
+                Display.error(f'Could not find file: {self.input_line_split[2]}')
         except IndexError:
-            Display.display_error('There are not enough parameters to execute the command `sum`.')
+            Display.error('There are not enough parameters to execute the command `sum`.')
             return
             
     def command_system(self):
@@ -1112,7 +1135,7 @@ class Main:
             del self.input_line_split[0]
             os.system(' '.join(self.input_line_split))
         except IndexError:
-            os.system(prompt('Enter command $ '))
+            os.system(prompt('Enter command > '))
     
 
 class Boot:
@@ -1128,11 +1151,11 @@ class Boot:
         self.__main__()
     
     def __colorama__(self):
-        Display.display_clear()
+        Display.clear()
         colorama.init()
         
     def __main__(self):
-        Display.display_version_program()
+        Display.version_program()
         Main()
         Display.display_exit_program()
 
@@ -1140,5 +1163,5 @@ if __name__ == '__main__':
     try:
         Boot()
     except Exception as unknown_error:
-        Display.display_error(f'Unknown error: {unknown_error}')
+        Display.error(f'Unknown error: {unknown_error}')
     sys.exit()

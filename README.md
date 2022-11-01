@@ -7,6 +7,8 @@ This program is implemented in <a href="https://www.python.org/">Python</a> vers
 Hashcap implements the conversion of a string into a hash, iteration of hashes, as well as getting the checksum of files.<br>
 <p align="center">
 
+__The program has been updated to version 1.1.__
+
 ![image](https://user-images.githubusercontent.com/107058068/179056663-b1c47324-cdba-4af0-80b4-45e78698c777.png)
 
 > Current version: 1.0

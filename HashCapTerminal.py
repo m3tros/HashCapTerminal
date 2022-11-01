@@ -637,6 +637,8 @@ class Hash:
             return Hash.keccak384(string)
         elif hash == '--keccak512':
             return Hash.keccak512(string)
+        elif hash == '--md2':
+            return Hash.md2(string)
         elif hash == '--md4':
             return Hash.md4(string)
         elif hash == '--md5':

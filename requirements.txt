@@ -2,3 +2,4 @@ pysha3
 whirlpool
 colorama
 prompt_toolkit
+hashbase

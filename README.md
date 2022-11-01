@@ -11,7 +11,7 @@ __The program has been updated to version 1.1.__
 
 ![image](https://user-images.githubusercontent.com/107058068/179056663-b1c47324-cdba-4af0-80b4-45e78698c777.png)
 
-> Current version: 1.0
+> Current version: 1.1
 
 # Libraries
 <table>
